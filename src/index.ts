@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { createVitePressPlugin, resolveConfig,type DefaultTheme } from 'vitepress-libray'
+import { createVitePressPlugin, resolveConfig,type DefaultTheme } from 'vitepress-library'
 import { createServer as createViteServer, type ServerOptions } from 'vite'
 import { resolve } from 'path'
 import fs from 'fs'
