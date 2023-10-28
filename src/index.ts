@@ -8,9 +8,13 @@ const ROOT = resolve(process.cwd(), './explame')
 const useConfig = {
   /**包导出出口 */
   entry: 'components/index.ts',
-  documentBase: '/dasdasda/',
+  /**baseurl */
+  documentBase: '/unmono-org/',
+  /**网站描述 */
   description: 'unmono description',
-  title: 'unmono doc',
+  /**网站标题*/
+  title: 'Unmono',
+  dts:true
 }
 function readTitleAndGroup(content:string){
 
@@ -58,8 +62,9 @@ async function createServer(
   config.site.lang = 'zh_CN'
   config.site.base = useConfig.documentBase||'/'
   config.site.description = useConfig.description||'unmono description'
-  config.site.title = useConfig.title ||'unmono doc'
-  config.site.appearance = false
+  config.site.title = useConfig.title ||'unmono'
+  config.site.appearance =true
+
   const sidebar = config.pages.filter(name=>name!=='index.md').map((pageName)=>{
     const { title, group } = readTitleAndGroup(fs.readFileSync(resolve(ROOT, `${pageName}`), 'utf8'))
     return {
@@ -83,19 +88,35 @@ async function createServer(
   }else{
     finalSidebar = sidebar
   }
-
-  console.log(groupSideBar)
   config.tempDir = resolve(ROOT, '.unmono/.temp')
   config.site.themeConfig = {
     lang :'zh_CN',
+    
     search: {
-      provider: "local"
+      provider: "local",
+      options:{
+        translations:{
+          button:{
+            buttonText: "搜索"
+          },
+          modal:{
+            resetButtonTitle:'重新搜索',
+            backButtonTitle:'返回',
+            noResultsText:'无内容',
+            footer:{
+              selectText:'选择',
+              navigateText:"选择",
+              closeText:"关闭",
+            }
+          }
+        }
+      }
     },
+    outlineTitle:'大纲',
     notFound:{
       quote:'但如果你不改变你的方向，如果你继续寻找，你可能会在你前进的地方结束。',
-      title:"页面不存在",
-      linkLabel:'首页',
-      linkText:'首页',
+      title:"页面走丢了",
+      linkText:'回到首页',
     },
     sidebar: finalSidebar,
     nav: [
@@ -104,7 +125,7 @@ async function createServer(
         link: "/",
       },
       {
-        text: '组件文档',
+        text: '文档',
         link: finalSidebar?.[0]?.link
       }
     ]

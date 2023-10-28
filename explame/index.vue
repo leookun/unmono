@@ -1,12 +1,16 @@
 <template>
-    <div class="index">
-       <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsa veniam fugit recusandae doloremque? Dicta rem culpa veniam expedita? Vel, tempore. In veritatis non atque sapiente, architecto nulla. Inventore, in.
-       </div>
+  <div class="index">
+    <div class="container my-hero">
+      <MyButton/>
+      <MyInput style="margin-top: 20px;"/>
     </div>
+  </div>
 </template>
-<style>
-
+<script setup>
+import MyButton from "./components/MyButton.vue"
+import MyInput from "./components/MyInput.vue"
+</script>
+<style lang="less">
 .index {
   margin-top: calc((var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1);
   padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px;
@@ -34,9 +38,15 @@
   max-width: 1152px;
 }
 
+.my-hero {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column !important;
+
+}
+
 @media (min-width: 960px) {
   .container {
     flex-direction: row;
   }
-}
-</style>
+}</style>
