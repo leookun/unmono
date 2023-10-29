@@ -10,7 +10,7 @@
       "src/cli.ts"
     ],
     "output": "dist",
-    "publicPath": "/",
+    "publicPath": "/unmono/",
     "documentPath": "./explame",
     "documentBuildPath": "./docs",
     "description": "unmono description",
