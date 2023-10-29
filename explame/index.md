@@ -11,22 +11,11 @@ hero:
       link: /docs/安装
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/...
+      link: https://github.com/leookun/unmono
 
 ---
 <script setup>
 import Index from './index.vue'
-const members = [
-  {
-    avatar: 'https://www.github.com/yyx990803.png',
-    name: 'Evan You',
-    title: 'Creator',
-    links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
-    ]
-  },
-]
 </script>
 <Index>
 </Index>
