@@ -1,0 +1,1 @@
+import{_ as e,o as _,c as t}from"./framework.0e8ae64e.js";const c={},n={class:"my-input",placeholder:"请输入"};function o(s,a){return _(),t("input",n)}const r=e(c,[["render",o],["__scopeId","data-v-19f35774"]]);export{r as M};

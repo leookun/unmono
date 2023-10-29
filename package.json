@@ -11,7 +11,7 @@
     ],
     "output": "dist",
     "publicPath": "/",
-    "documentPath": "./",
+    "documentPath": "./explame",
     "documentBuildPath": "./doc-dist",
     "description": "unmono description",
     "title": "unmono",
@@ -27,7 +27,7 @@
   "scripts": {
     "typescript-run": "cross-env NODE_NO_WARNINGS=1 node --loader @esbuild-kit/esm-loader",
     "build-myself": "rimraf dist &&  npm run typescript-run script/build.self.ts",
-    "start": "rimraf dist &&  npm run build-myself && node dist/cli.js doc --dev",
+    "start": "rimraf dist &&  npm run build-myself && node dist/cli.js doc",
     "release": "pnpm build-myself && pnpm release-npm ",
     "release-npm": "pnpm publish --registry=https://registry.npmjs.org/ --no-git-checks "
   },
