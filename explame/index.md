@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Unmono
-  text: Vite & Vitepress 驱动的文档扫描器
-  tagline: 📦 开箱即用的库构建工具 
+  text: 文档扫描工具
+  tagline: 支持指定入口库构建 
   actions:
     - theme: brand
       text: 开始使用
