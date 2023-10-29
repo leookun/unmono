@@ -1,0 +1,1 @@
+import{_ as t,o as _,c as e}from"./framework.38c78413.js";const o={},c={class:"my-button"};function n(a,s){return _(),e("button",c,"按钮组件")}const u=t(o,[["render",n],["__scopeId","data-v-a03a048a"]]);export{u as M};
