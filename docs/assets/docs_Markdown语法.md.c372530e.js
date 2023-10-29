@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh_CN" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Markdown语法 | unmono</title>
-    <meta name="description" content="unmono description">
-    <link rel="preload stylesheet" href="/assets/style.75f63048.css" as="style">
-    
-    <script type="module" src="/assets/app.7be02cba.js"></script>
-    <link rel="preload" href="/assets/inter-roman-latin.2ed14f66.woff2" as="font" type="font/woff2" crossorigin="">
-    <link rel="modulepreload" href="/assets/chunks/framework.0e8ae64e.js">
-    <link rel="modulepreload" href="/assets/chunks/theme.e74c1bb6.js">
-    <link rel="modulepreload" href="/assets/docs_Markdown语法.md.e8ca485c.lean.js">
-    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
-    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
-  </head>
-  <body>
-    <div id="app"><div class="Layout" data-v-a14cd3dd><!--[--><!--]--><!--[--><span tabindex="-1" data-v-58060bda></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-58060bda> Skip to content </a><!--]--><!----><header class="VPNav" data-v-a14cd3dd data-v-bb2552ba><div class="VPNavBar has-sidebar" data-v-bb2552ba data-v-df7be58b><div class="container" data-v-df7be58b><div class="title" data-v-df7be58b><div class="VPNavBarTitle has-sidebar" data-v-df7be58b data-v-18473fdb><a class="title" href="/" data-v-18473fdb><!--[--><!--]--><!----><!--[-->unmono<!--]--><!--[--><!--]--></a></div></div><div class="content" data-v-df7be58b><div class="curtain" data-v-df7be58b></div><div class="content-body" data-v-df7be58b><!--[--><!--]--><div class="VPNavBarSearch search" data-v-df7be58b><!--[--><!----><div id="local-search"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg class="DocSearch-Search-Icon" width="20" height="20" viewBox="0 0 20 20" aria-label="search icon"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">搜索</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-df7be58b data-v-90312ae2><span id="main-nav-aria-label" class="visually-hidden" data-v-90312ae2>Main Navigation</span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/" tabindex="0" data-v-90312ae2 data-v-a4109a68><!--[--><span data-v-a4109a68>首页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/components/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.html" tabindex="0" data-v-90312ae2 data-v-a4109a68><!--[--><span data-v-a4109a68>文档</span><!--]--></a><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-df7be58b data-v-5cd74de3><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="toggle dark mode" aria-checked="false" data-v-5cd74de3 data-v-c88fad62 data-v-cc367e93><span class="check" data-v-cc367e93><span class="icon" data-v-cc367e93><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-c88fad62><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-c88fad62><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div><!----><div class="VPFlyout VPNavBarExtra extra" data-v-df7be58b data-v-f8500783 data-v-e65a0c74><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-e65a0c74><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-e65a0c74><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></svg></button><div class="menu" data-v-e65a0c74><div class="VPMenu" data-v-e65a0c74 data-v-6b5f79b6><!----><!--[--><!--[--><!----><div class="group" data-v-f8500783><div class="item appearance" data-v-f8500783><p class="label" data-v-f8500783>Appearance</p><div class="appearance-action" data-v-f8500783><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="toggle dark mode" aria-checked="false" data-v-f8500783 data-v-c88fad62 data-v-cc367e93><span class="check" data-v-cc367e93><span class="icon" data-v-cc367e93><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-c88fad62><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-c88fad62><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div></div></div><!----><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-df7be58b data-v-a70d335e><span class="container" data-v-a70d335e><span class="top" data-v-a70d335e></span><span class="middle" data-v-a70d335e></span><span class="bottom" data-v-a70d335e></span></span></button></div></div></div></div><!----></header><div class="VPLocalNav reached-top" data-v-a14cd3dd data-v-f9ad9d99><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-f9ad9d99><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="menu-icon" data-v-f9ad9d99><path d="M17,11H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S17.6,11,17,11z"></path><path d="M21,7H3C2.4,7,2,6.6,2,6s0.4-1,1-1h18c0.6,0,1,0.4,1,1S21.6,7,21,7z"></path><path d="M21,15H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h18c0.6,0,1,0.4,1,1S21.6,15,21,15z"></path><path d="M17,19H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S17.6,19,17,19z"></path></svg><span class="menu-text" data-v-f9ad9d99>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-f9ad9d99 data-v-cf193a6b><button data-v-cf193a6b>Return to top</button><!----></div></div><aside class="VPSidebar" data-v-a14cd3dd data-v-e0834de9><div class="curtain" data-v-e0834de9></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-e0834de9><span class="visually-hidden" id="sidebar-aria-label" data-v-e0834de9> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="group" data-v-e0834de9><section class="VPSidebarItem level-0 collapsible is-link" data-v-e0834de9 data-v-f52debeb><div class="item" tabindex="0" data-v-f52debeb><div class="indicator" data-v-f52debeb></div><a class="VPLink link link" href="/components/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.html" data-v-f52debeb><!--[--><h2 class="text" data-v-f52debeb>基础组件</h2><!--]--></a><div class="caret" role="button" aria-label="toggle section" tabindex="0" data-v-f52debeb><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="caret-icon" data-v-f52debeb><path d="M9,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5.3-5.3L8.3,6.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.4,0.4,0.4,1,0,1.4l-6,6C9.5,18.9,9.3,19,9,19z"></path></svg></div></div><div class="items" data-v-f52debeb><!--[--><div class="VPSidebarItem level-1 is-link" data-v-f52debeb data-v-f52debeb><div class="item" data-v-f52debeb><div class="indicator" data-v-f52debeb></div><a class="VPLink link link" href="/components/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.html" data-v-f52debeb><!--[--><p class="text" data-v-f52debeb>按钮组件</p><!--]--></a><!--v-if--></div><!--v-if--></div><div class="VPSidebarItem level-1 is-link" data-v-f52debeb data-v-f52debeb><div class="item" data-v-f52debeb><div class="indicator" data-v-f52debeb></div><a class="VPLink link link" href="/components/%E8%BE%93%E5%85%A5%E6%A1%86%E7%BB%84%E4%BB%B6.html" data-v-f52debeb><!--[--><p class="text" data-v-f52debeb>输入框组件</p><!--]--></a><!--v-if--></div><!--v-if--></div><!--]--></div></section></div><div class="group" data-v-e0834de9><section class="VPSidebarItem level-0 collapsible is-link" data-v-e0834de9 data-v-f52debeb><div class="item" tabindex="0" data-v-f52debeb><div class="indicator" data-v-f52debeb></div><a class="VPLink link link" href="/docs/Markdown%E8%AF%AD%E6%B3%95.html" data-v-f52debeb><!--[--><h2 class="text" data-v-f52debeb>写作</h2><!--]--></a><div class="caret" role="button" aria-label="toggle section" tabindex="0" data-v-f52debeb><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="caret-icon" data-v-f52debeb><path d="M9,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5.3-5.3L8.3,6.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.4,0.4,0.4,1,0,1.4l-6,6C9.5,18.9,9.3,19,9,19z"></path></svg></div></div><div class="items" data-v-f52debeb><!--[--><div class="VPSidebarItem level-1 is-link" data-v-f52debeb data-v-f52debeb><div class="item" data-v-f52debeb><div class="indicator" data-v-f52debeb></div><a class="VPLink link link" href="/docs/Markdown%E8%AF%AD%E6%B3%95.html" data-v-f52debeb><!--[--><p class="text" data-v-f52debeb>Markdown语法</p><!--]--></a><!--v-if--></div><!--v-if--></div><!--]--></div></section></div><div class="group" data-v-e0834de9><section class="VPSidebarItem level-0 collapsible is-link" data-v-e0834de9 data-v-f52debeb><div class="item" tabindex="0" data-v-f52debeb><div class="indicator" data-v-f52debeb></div><a class="VPLink link link" href="/docs/%E5%AE%89%E8%A3%85.html" data-v-f52debeb><!--[--><h2 class="text" data-v-f52debeb>快速开始</h2><!--]--></a><div class="caret" role="button" aria-label="toggle section" tabindex="0" data-v-f52debeb><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="caret-icon" data-v-f52debeb><path d="M9,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5.3-5.3L8.3,6.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.4,0.4,0.4,1,0,1.4l-6,6C9.5,18.9,9.3,19,9,19z"></path></svg></div></div><div class="items" data-v-f52debeb><!--[--><div class="VPSidebarItem level-1 is-link" data-v-f52debeb data-v-f52debeb><div class="item" data-v-f52debeb><div class="indicator" data-v-f52debeb></div><a class="VPLink link link" href="/docs/%E5%AE%89%E8%A3%85.html" data-v-f52debeb><!--[--><p class="text" data-v-f52debeb>安装</p><!--]--></a><!--v-if--></div><!--v-if--></div><div class="VPSidebarItem level-1 is-link" data-v-f52debeb data-v-f52debeb><div class="item" data-v-f52debeb><div class="indicator" data-v-f52debeb></div><a class="VPLink link link" href="/docs/%E9%85%8D%E7%BD%AE.html" data-v-f52debeb><!--[--><p class="text" data-v-f52debeb>配置</p><!--]--></a><!--v-if--></div><!--v-if--></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-a14cd3dd data-v-874e5f63><div class="VPDoc has-sidebar has-aside" data-v-874e5f63 data-v-8800a756><!--[--><!--]--><div class="container" data-v-8800a756><div class="aside" data-v-8800a756><div class="aside-curtain" data-v-8800a756></div><div class="aside-container" data-v-8800a756><div class="aside-content" data-v-8800a756><div class="VPDocAside" data-v-8800a756 data-v-b6f603cb><!--[--><!--]--><!--[--><!--]--><div class="VPDocAsideOutline" role="navigation" data-v-b6f603cb data-v-2c170d79><div class="content" data-v-2c170d79><div class="outline-marker" data-v-2c170d79></div><div class="outline-title" role="heading" aria-level="2" data-v-2c170d79>大纲</div><nav aria-labelledby="doc-outline-aria-label" data-v-2c170d79><span class="visually-hidden" id="doc-outline-aria-label" data-v-2c170d79> Table of Contents for current page </span><ul class="root" data-v-2c170d79 data-v-b7726b60><!--[--><!--]--></ul></nav></div></div><!--[--><!--]--><div class="spacer" data-v-b6f603cb></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-8800a756><div class="content-container" data-v-8800a756><!--[--><!--]--><!----><main class="main" data-v-8800a756><div style="position:relative;" class="vp-doc _docs_Markdown%E8%AF%AD%E6%B3%95" data-v-8800a756><div><h1 id="markdown语法" tabindex="-1">Markdown语法 <a class="header-anchor" href="#markdown语法" aria-label="Permalink to &quot;Markdown语法&quot;">​</a></h1><p>内置了Markdown扩展功能。</p><h2 id="标题锚点" tabindex="-1">标题锚点 <a class="header-anchor" href="#标题锚点" aria-label="Permalink to &quot;标题锚点&quot;">​</a></h2><p>标题会自动应用锚链接。可以使用 <code>markdown.anchor</code> 选项配置锚点的渲染方式。</p><h3 id="自定义锚点" tabindex="-1">自定义锚点 <a class="header-anchor" href="#自定义锚点" aria-label="Permalink to &quot;自定义锚点&quot;">​</a></h3><p>要为标题指定自定义锚点标签而不是使用自动生成的标签，请在标题末尾添加后缀：</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#79B8FF;font-weight:bold;"># 使用自定义锚点 {#my-anchor}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#005CC5;font-weight:bold;"># 使用自定义锚点 {#my-anchor}</span></span></code></pre></div><p>这样，您可以链接到标题，例如 <code>#my-anchor</code>，而不是默认的 <code>#using-custom-anchors</code>。</p><h2 id="链接" tabindex="-1">链接 <a class="header-anchor" href="#链接" aria-label="Permalink to &quot;链接&quot;">​</a></h2><p>内部和外部链接都会受到特殊处理。</p><h3 id="内部链接" tabindex="-1">内部链接 <a class="header-anchor" href="#内部链接" aria-label="Permalink to &quot;内部链接&quot;">​</a></h3><p>内部链接会转换为SPA导航的路由链接。此外，每个子目录中包含的 <code>index.md</code> 将自动转换为 <code>index.html</code>，对应的URL为 <code>/</code>。</p><p>例如，给定以下目录结构：</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">.</span></span>
+import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.0e8ae64e.js";const g=JSON.parse('{"title":"Markdown语法","description":"","frontmatter":{"title":"Markdown语法","group":"写作","lang":"zh-CN"},"headers":[],"relativePath":"docs/Markdown语法.md","filePath":"docs/Markdown语法.md"}'),p={name:"docs/Markdown语法.md"},e=l(`<h1 id="markdown语法" tabindex="-1">Markdown语法 <a class="header-anchor" href="#markdown语法" aria-label="Permalink to &quot;Markdown语法&quot;">​</a></h1><p>内置了Markdown扩展功能。</p><h2 id="标题锚点" tabindex="-1">标题锚点 <a class="header-anchor" href="#标题锚点" aria-label="Permalink to &quot;标题锚点&quot;">​</a></h2><p>标题会自动应用锚链接。可以使用 <code>markdown.anchor</code> 选项配置锚点的渲染方式。</p><h3 id="自定义锚点" tabindex="-1">自定义锚点 <a class="header-anchor" href="#自定义锚点" aria-label="Permalink to &quot;自定义锚点&quot;">​</a></h3><p>要为标题指定自定义锚点标签而不是使用自动生成的标签，请在标题末尾添加后缀：</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#79B8FF;font-weight:bold;"># 使用自定义锚点 {#my-anchor}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#005CC5;font-weight:bold;"># 使用自定义锚点 {#my-anchor}</span></span></code></pre></div><p>这样，您可以链接到标题，例如 <code>#my-anchor</code>，而不是默认的 <code>#using-custom-anchors</code>。</p><h2 id="链接" tabindex="-1">链接 <a class="header-anchor" href="#链接" aria-label="Permalink to &quot;链接&quot;">​</a></h2><p>内部和外部链接都会受到特殊处理。</p><h3 id="内部链接" tabindex="-1">内部链接 <a class="header-anchor" href="#内部链接" aria-label="Permalink to &quot;内部链接&quot;">​</a></h3><p>内部链接会转换为SPA导航的路由链接。此外，每个子目录中包含的 <code>index.md</code> 将自动转换为 <code>index.html</code>，对应的URL为 <code>/</code>。</p><p>例如，给定以下目录结构：</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">.</span></span>
 <span class="line"><span style="color:#E1E4E8;">├─ index.md</span></span>
 <span class="line"><span style="color:#E1E4E8;">├─ foo</span></span>
 <span class="line"><span style="color:#E1E4E8;">│  ├─ index.md</span></span>
@@ -99,13 +81,13 @@
 <span class="line"><span style="color:#E1E4E8;">:::</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E1E4E8;">::: 详细信息 点击查看代码</span></span>
-<span class="line"><span style="color:#E1E4E8;">```js</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#E1E4E8;">console.</span><span style="color:#B392F0;">log</span><span style="color:#E1E4E8;">(</span><span style="color:#9ECBFF;">&#39;你好，VitePress!&#39;</span><span style="color:#E1E4E8;">)</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">::: 危险 STOP</span></span>
 <span class="line"><span style="color:#24292E;">危险区域，请勿继续</span></span>
 <span class="line"><span style="color:#24292E;">:::</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292E;">::: 详细信息 点击查看代码</span></span>
-<span class="line"><span style="color:#24292E;">```js</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`js</span></span>
 <span class="line"><span style="color:#24292E;">console.</span><span style="color:#6F42C1;">log</span><span style="color:#24292E;">(</span><span style="color:#032F62;">&#39;你好，VitePress!&#39;</span><span style="color:#24292E;">)</span></span></code></pre></div><p>:::</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">**输出**</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
@@ -114,7 +96,7 @@
 <span class="line"><span style="color:#e1e4e8;">:::</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">::: 详细信息 点击查看代码</span></span>
-<span class="line"><span style="color:#e1e4e8;">```js</span></span>
+<span class="line"><span style="color:#e1e4e8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#e1e4e8;">console.log(&#39;你好，VitePress!&#39;)</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">**输出**</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
@@ -123,7 +105,7 @@
 <span class="line"><span style="color:#24292e;">:::</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">::: 详细信息 点击查看代码</span></span>
-<span class="line"><span style="color:#24292e;">```js</span></span>
+<span class="line"><span style="color:#24292e;">\`\`\`js</span></span>
 <span class="line"><span style="color:#24292e;">console.log(&#39;你好，VitePress!&#39;)</span></span></code></pre></div><p>:::</p><p>此外，您还可以通过在站点配置中添加以下内容来全局设置自定义标题，这对于非英语写作非常有用：</p><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#6A737D;">// config.ts</span></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">defineConfig</span><span style="color:#E1E4E8;">({</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// ...</span></span>
@@ -150,7 +132,7 @@
 <span class="line"><span style="color:#24292E;">    }</span></span>
 <span class="line"><span style="color:#24292E;">  }</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// ...</span></span>
-<span class="line"><span style="color:#24292E;">})</span></span></code></pre></div><h3 id="raw" tabindex="-1"><code>raw</code> <a class="header-anchor" href="#raw" aria-label="Permalink to &quot;`raw`&quot;">​</a></h3><p>这是一个特殊的容器，可用于防止与VitePress的样式和路由冲突。这在文档化组件库时特别有用。您可能还想查看 <a href="https://whyframe.dev/docs/integrations/vitepress" target="_blank" rel="noreferrer">whyframe</a> 以获得更好的隔离性。</p><p><strong>语法</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">::: raw</span></span>
+<span class="line"><span style="color:#24292E;">})</span></span></code></pre></div><h3 id="raw" tabindex="-1"><code>raw</code> <a class="header-anchor" href="#raw" aria-label="Permalink to &quot;\`raw\`&quot;">​</a></h3><p>这是一个特殊的容器，可用于防止与VitePress的样式和路由冲突。这在文档化组件库时特别有用。您可能还想查看 <a href="https://whyframe.dev/docs/integrations/vitepress" target="_blank" rel="noreferrer">whyframe</a> 以获得更好的隔离性。</p><p><strong>语法</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">::: raw</span></span>
 <span class="line"><span style="color:#E1E4E8;">包裹在 &lt;div class=&quot;vp-raw&quot;&gt; 中。</span></span>
 <span class="line"><span style="color:#E1E4E8;">:::</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">::: raw</span></span>
 <span class="line"><span style="color:#24292E;">包裹在 &lt;div class=&quot;vp-raw&quot;&gt; 中。</span></span>
@@ -163,14 +145,14 @@
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> {</span></span>
 <span class="line"><span style="color:#24292E;">  plugins: [</span><span style="color:#6F42C1;">postcssIsolateStyles</span><span style="color:#24292E;">()]</span></span>
 <span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><p>它在底层使用 <a href="https://github.com/postcss/postcss-load-config" target="_blank" rel="noreferrer"><code>postcss-prefix-selector</code></a>。您可以像这样传递其选项：</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#B392F0;">postcssIsolateStyles</span><span style="color:#E1E4E8;">({</span></span>
-<span class="line"><span style="color:#E1E4E8;">  includeFiles: [</span><span style="color:#9ECBFF;">/</span><span style="color:#DBEDFF;">vp-doc</span><span style="color:#85E89D;font-weight:bold;">\.</span><span style="color:#DBEDFF;">css</span><span style="color:#9ECBFF;">/</span><span style="color:#E1E4E8;">] </span><span style="color:#6A737D;">// 默认为 /base\.css/</span></span>
+<span class="line"><span style="color:#E1E4E8;">  includeFiles: [</span><span style="color:#9ECBFF;">/</span><span style="color:#DBEDFF;">vp-doc</span><span style="color:#85E89D;font-weight:bold;">\\.</span><span style="color:#DBEDFF;">css</span><span style="color:#9ECBFF;">/</span><span style="color:#E1E4E8;">] </span><span style="color:#6A737D;">// 默认为 /base\\.css/</span></span>
 <span class="line"><span style="color:#E1E4E8;">})</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#6F42C1;">postcssIsolateStyles</span><span style="color:#24292E;">({</span></span>
-<span class="line"><span style="color:#24292E;">  includeFiles: [</span><span style="color:#032F62;">/vp-doc</span><span style="color:#22863A;font-weight:bold;">\.</span><span style="color:#032F62;">css/</span><span style="color:#24292E;">] </span><span style="color:#6A737D;">// 默认为 /base\.css/</span></span>
-<span class="line"><span style="color:#24292E;">})</span></span></code></pre></div></li></ul><h2 id="代码块中的语法高亮" tabindex="-1">代码块中的语法高亮 <a class="header-anchor" href="#代码块中的语法高亮" aria-label="Permalink to &quot;代码块中的语法高亮&quot;">​</a></h2><p>VitePress使用 <a href="https://shiki.matsu.io/" target="_blank" rel="noreferrer">Shiki</a> 在Markdown代码块中突出显示语言语法，使用有色文本。Shiki支持各种编程语言。您只需在代码块的开头附加有效的语言别名即可：</p><p><strong>输入</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">```js</span></span>
+<span class="line"><span style="color:#24292E;">  includeFiles: [</span><span style="color:#032F62;">/vp-doc</span><span style="color:#22863A;font-weight:bold;">\\.</span><span style="color:#032F62;">css/</span><span style="color:#24292E;">] </span><span style="color:#6A737D;">// 默认为 /base\\.css/</span></span>
+<span class="line"><span style="color:#24292E;">})</span></span></code></pre></div></li></ul><h2 id="代码块中的语法高亮" tabindex="-1">代码块中的语法高亮 <a class="header-anchor" href="#代码块中的语法高亮" aria-label="Permalink to &quot;代码块中的语法高亮&quot;">​</a></h2><p>VitePress使用 <a href="https://shiki.matsu.io/" target="_blank" rel="noreferrer">Shiki</a> 在Markdown代码块中突出显示语言语法，使用有色文本。Shiki支持各种编程语言。您只需在代码块的开头附加有效的语言别名即可：</p><p><strong>输入</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#E1E4E8;">  name: </span><span style="color:#9ECBFF;">&#39;MyComponent&#39;</span><span style="color:#E1E4E8;">,</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// ...</span></span>
-<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">```js</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">\`\`\`js</span></span>
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> {</span></span>
 <span class="line"><span style="color:#24292E;">  name: </span><span style="color:#032F62;">&#39;MyComponent&#39;</span><span style="color:#24292E;">,</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// ...</span></span>
@@ -185,14 +167,14 @@
 <span class="line"><span style="color:#24292E;">&lt;/</span><span style="color:#22863A;">ul</span><span style="color:#24292E;">&gt;</span></span></code></pre></div><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">**输出**</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
-<span class="line"><span style="color:#e1e4e8;">```js</span></span>
+<span class="line"><span style="color:#e1e4e8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#e1e4e8;">export default {</span></span>
 <span class="line"><span style="color:#e1e4e8;">  name: &#39;MyComponent&#39;</span></span>
 <span class="line"><span style="color:#e1e4e8;">  // ...</span></span>
 <span class="line"><span style="color:#e1e4e8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">**输出**</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
-<span class="line"><span style="color:#24292e;">```js</span></span>
+<span class="line"><span style="color:#24292e;">\`\`\`js</span></span>
 <span class="line"><span style="color:#24292e;">export default {</span></span>
 <span class="line"><span style="color:#24292e;">  name: &#39;MyComponent&#39;</span></span>
 <span class="line"><span style="color:#24292e;">  // ...</span></span>
@@ -204,14 +186,14 @@
 <span class="line"><span style="color:#24292E;">  &lt;</span><span style="color:#22863A;">li</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">v-for</span><span style="color:#24292E;">=</span><span style="color:#032F62;">&quot;todo in todos&quot;</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">:key</span><span style="color:#24292E;">=</span><span style="color:#032F62;">&quot;todo.id&quot;</span><span style="color:#24292E;">&gt;</span></span>
 <span class="line"><span style="color:#24292E;">    {{ todo.text }}</span></span>
 <span class="line"><span style="color:#24292E;">  &lt;/</span><span style="color:#22863A;">li</span><span style="color:#24292E;">&gt;</span></span>
-<span class="line"><span style="color:#24292E;">&lt;/</span><span style="color:#22863A;">ul</span><span style="color:#24292E;">&gt;</span></span></code></pre></div><p>有关 Shiki 仓库上的 <a href="https://github.com/shikijs/shiki/blob/main/docs/languages.md" target="_blank" rel="noreferrer">有效语言的列表</a>。</p><h2 id="代码块中的行高亮" tabindex="-1">代码块中的行高亮 <a class="header-anchor" href="#代码块中的行高亮" aria-label="Permalink to &quot;代码块中的行高亮&quot;">​</a></h2><p><strong>输入</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">```js{4}</span></span>
+<span class="line"><span style="color:#24292E;">&lt;/</span><span style="color:#22863A;">ul</span><span style="color:#24292E;">&gt;</span></span></code></pre></div><p>有关 Shiki 仓库上的 <a href="https://github.com/shikijs/shiki/blob/main/docs/languages.md" target="_blank" rel="noreferrer">有效语言的列表</a>。</p><h2 id="代码块中的行高亮" tabindex="-1">代码块中的行高亮 <a class="header-anchor" href="#代码块中的行高亮" aria-label="Permalink to &quot;代码块中的行高亮&quot;">​</a></h2><p><strong>输入</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">\`\`\`js{4}</span></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#B392F0;">data</span><span style="color:#E1E4E8;"> () {</span></span>
 <span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#F97583;">return</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#E1E4E8;">      msg: </span><span style="color:#9ECBFF;">&#39;已突出显示!&#39;</span></span>
 <span class="line"><span style="color:#E1E4E8;">    }</span></span>
 <span class="line"><span style="color:#E1E4E8;">  }</span></span>
-<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">```js{4}</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">\`\`\`js{4}</span></span>
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> {</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6F42C1;">data</span><span style="color:#24292E;"> () {</span></span>
 <span class="line"><span style="color:#24292E;">    </span><span style="color:#D73A49;">return</span><span style="color:#24292E;"> {</span></span>
@@ -221,7 +203,7 @@
 <span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">**输出**</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
-<span class="line"><span style="color:#e1e4e8;">```js{4}</span></span>
+<span class="line"><span style="color:#e1e4e8;">\`\`\`js{4}</span></span>
 <span class="line"><span style="color:#e1e4e8;">export default {</span></span>
 <span class="line"><span style="color:#e1e4e8;">  data () {</span></span>
 <span class="line"><span style="color:#e1e4e8;">    return {</span></span>
@@ -231,31 +213,31 @@
 <span class="line"><span style="color:#e1e4e8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">**输出**</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
-<span class="line"><span style="color:#24292e;">```js{4}</span></span>
+<span class="line"><span style="color:#24292e;">\`\`\`js{4}</span></span>
 <span class="line"><span style="color:#24292e;">export default {</span></span>
 <span class="line"><span style="color:#24292e;">  data () {</span></span>
 <span class="line"><span style="color:#24292e;">    return {</span></span>
 <span class="line"><span style="color:#24292e;">      msg: &#39;已突出显示!&#39;</span></span>
 <span class="line"><span style="color:#24292e;">    }</span></span>
 <span class="line"><span style="color:#24292e;">  }</span></span>
-<span class="line"><span style="color:#24292e;">}</span></span></code></pre></div><p>除了一行外，您还可以指定多个单行、范围或两者兼而有之：</p><ul><li>行范围：例如 <code>{5-8}</code>、<code>{3-10}</code>、<code>{10-17}</code></li><li>多个单行：例如 <code>{4,7,9}</code></li><li>行范围和单行：例如 <code>{4,7-13,16,23-27,40}</code></li></ul><p><strong>输入</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">```js{1,4,6-8}</span></span>
+<span class="line"><span style="color:#24292e;">}</span></span></code></pre></div><p>除了一行外，您还可以指定多个单行、范围或两者兼而有之：</p><ul><li>行范围：例如 <code>{5-8}</code>、<code>{3-10}</code>、<code>{10-17}</code></li><li>多个单行：例如 <code>{4,7,9}</code></li><li>行范围和单行：例如 <code>{4,7-13,16,23-27,40}</code></li></ul><p><strong>输入</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">\`\`\`js{1,4,6-8}</span></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> { </span><span style="color:#6A737D;">// 已突出显示</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#B392F0;">data</span><span style="color:#E1E4E8;"> () {</span></span>
 <span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#F97583;">return</span><span style="color:#E1E4E8;"> {</span></span>
-<span class="line"><span style="color:#E1E4E8;">      msg: </span><span style="color:#9ECBFF;">`已突出显示!</span></span>
+<span class="line"><span style="color:#E1E4E8;">      msg: </span><span style="color:#9ECBFF;">\`已突出显示!</span></span>
 <span class="line"><span style="color:#9ECBFF;">      此行未突出显示，</span></span>
-<span class="line"><span style="color:#9ECBFF;">      但这一行和接下来的2行都是。`</span><span style="color:#E1E4E8;">,</span></span>
+<span class="line"><span style="color:#9ECBFF;">      但这一行和接下来的2行都是。\`</span><span style="color:#E1E4E8;">,</span></span>
 <span class="line"><span style="color:#E1E4E8;">      motd: </span><span style="color:#9ECBFF;">&#39;VitePress很棒&#39;</span><span style="color:#E1E4E8;">,</span></span>
 <span class="line"><span style="color:#E1E4E8;">      lorem: </span><span style="color:#9ECBFF;">&#39;ipsum&#39;</span></span>
 <span class="line"><span style="color:#E1E4E8;">    }</span></span>
 <span class="line"><span style="color:#E1E4E8;">  }</span></span>
-<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">```js{1,4,6-8}</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">\`\`\`js{1,4,6-8}</span></span>
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> { </span><span style="color:#6A737D;">// 已突出显示</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6F42C1;">data</span><span style="color:#24292E;"> () {</span></span>
 <span class="line"><span style="color:#24292E;">    </span><span style="color:#D73A49;">return</span><span style="color:#24292E;"> {</span></span>
-<span class="line"><span style="color:#24292E;">      msg: </span><span style="color:#032F62;">`已突出显示!</span></span>
+<span class="line"><span style="color:#24292E;">      msg: </span><span style="color:#032F62;">\`已突出显示!</span></span>
 <span class="line"><span style="color:#032F62;">      此行未突出显示，</span></span>
-<span class="line"><span style="color:#032F62;">      但这一行和接下来的2行都是。`</span><span style="color:#24292E;">,</span></span>
+<span class="line"><span style="color:#032F62;">      但这一行和接下来的2行都是。\`</span><span style="color:#24292E;">,</span></span>
 <span class="line"><span style="color:#24292E;">      motd: </span><span style="color:#032F62;">&#39;VitePress很棒&#39;</span><span style="color:#24292E;">,</span></span>
 <span class="line"><span style="color:#24292E;">      lorem: </span><span style="color:#032F62;">&#39;ipsum&#39;</span></span>
 <span class="line"><span style="color:#24292E;">    }</span></span>
@@ -263,13 +245,13 @@
 <span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">**输出**</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
-<span class="line"><span style="color:#e1e4e8;">```js{1,4,6-8}</span></span>
+<span class="line"><span style="color:#e1e4e8;">\`\`\`js{1,4,6-8}</span></span>
 <span class="line"><span style="color:#e1e4e8;">export default { // 已突出显示</span></span>
 <span class="line"><span style="color:#e1e4e8;">  data () {</span></span>
 <span class="line"><span style="color:#e1e4e8;">    return {</span></span>
-<span class="line"><span style="color:#e1e4e8;">      msg: `已突出显示!</span></span>
+<span class="line"><span style="color:#e1e4e8;">      msg: \`已突出显示!</span></span>
 <span class="line"><span style="color:#e1e4e8;">      此行未突出显示，</span></span>
-<span class="line"><span style="color:#e1e4e8;">      但这一行和接下来的2行都是。`,</span></span>
+<span class="line"><span style="color:#e1e4e8;">      但这一行和接下来的2行都是。\`,</span></span>
 <span class="line"><span style="color:#e1e4e8;">      motd: &#39;VitePress很棒&#39;,</span></span>
 <span class="line"><span style="color:#e1e4e8;">      lorem: &#39;ipsum&#39;,</span></span>
 <span class="line"><span style="color:#e1e4e8;">    }</span></span>
@@ -277,25 +259,25 @@
 <span class="line"><span style="color:#e1e4e8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">**输出**</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
-<span class="line"><span style="color:#24292e;">```js{1,4,6-8}</span></span>
+<span class="line"><span style="color:#24292e;">\`\`\`js{1,4,6-8}</span></span>
 <span class="line"><span style="color:#24292e;">export default { // 已突出显示</span></span>
 <span class="line"><span style="color:#24292e;">  data () {</span></span>
 <span class="line"><span style="color:#24292e;">    return {</span></span>
-<span class="line"><span style="color:#24292e;">      msg: `已突出显示!</span></span>
+<span class="line"><span style="color:#24292e;">      msg: \`已突出显示!</span></span>
 <span class="line"><span style="color:#24292e;">      此行未突出显示，</span></span>
-<span class="line"><span style="color:#24292e;">      但这一行和接下来的2行都是。`,</span></span>
+<span class="line"><span style="color:#24292e;">      但这一行和接下来的2行都是。\`,</span></span>
 <span class="line"><span style="color:#24292e;">      motd: &#39;VitePress很棒&#39;,</span></span>
 <span class="line"><span style="color:#24292e;">      lorem: &#39;ipsum&#39;,</span></span>
 <span class="line"><span style="color:#24292e;">    }</span></span>
 <span class="line"><span style="color:#24292e;">  }</span></span>
-<span class="line"><span style="color:#24292e;">}</span></span></code></pre></div><p>或者，您可以使用 <code>// [!code hl]</code> 注释直接在行中进行突出显示。</p><p><strong>输入</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">```js</span></span>
+<span class="line"><span style="color:#24292e;">}</span></span></code></pre></div><p>或者，您可以使用 <code>// [!code hl]</code> 注释直接在行中进行突出显示。</p><p><strong>输入</strong></p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#B392F0;">data</span><span style="color:#E1E4E8;"> () {</span></span>
 <span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#F97583;">return</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#E1E4E8;">      msg: </span><span style="color:#9ECBFF;">&#39;已突出显示!&#39;</span><span style="color:#E1E4E8;"> </span><span style="color:#6A737D;">// [!code  hl]</span></span>
 <span class="line"><span style="color:#E1E4E8;">    }</span></span>
 <span class="line"><span style="color:#E1E4E8;">  }</span></span>
-<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">```js</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">\`\`\`js</span></span>
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> {</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6F42C1;">data</span><span style="color:#24292E;"> () {</span></span>
 <span class="line"><span style="color:#24292E;">    </span><span style="color:#D73A49;">return</span><span style="color:#24292E;"> {</span></span>
@@ -305,7 +287,7 @@
 <span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark has-highlighted-lines vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">**输出**</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
-<span class="line"><span style="color:#e1e4e8;">```js</span></span>
+<span class="line"><span style="color:#e1e4e8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#e1e4e8;">export default {</span></span>
 <span class="line"><span style="color:#e1e4e8;">  data() {</span></span>
 <span class="line"><span style="color:#e1e4e8;">    return {</span></span>
@@ -315,7 +297,7 @@
 <span class="line"><span style="color:#e1e4e8;">}</span></span></code></pre><pre class="shiki github-light has-highlighted-lines vp-code-light"><code><span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">**输出**</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
-<span class="line"><span style="color:#24292e;">```js</span></span>
+<span class="line"><span style="color:#24292e;">\`\`\`js</span></span>
 <span class="line"><span style="color:#24292e;">export default {</span></span>
 <span class="line"><span style="color:#24292e;">  data() {</span></span>
 <span class="line"><span style="color:#24292e;">    return {</span></span>
@@ -323,7 +305,7 @@
 <span class="line"><span style="color:#24292e;">    }</span></span>
 <span class="line"><span style="color:#24292e;">  }</span></span>
 <span class="line"><span style="color:#24292e;">}</span></span></code></pre></div><h2 id="代码块中的焦点" tabindex="-1">代码块中的焦点 <a class="header-anchor" href="#代码块中的焦点" aria-label="Permalink to &quot;代码块中的焦点&quot;">​</a></h2><p>在一行上添加 <code>// [!code focus]</code> 注释将对其进行焦点处理，并模糊代码块的其他部分。</p><p>此外，您可以使用 <code>// [!code focus:&lt;lines&gt;]</code> 定义要关注的行数。</p><p><strong>输入</strong></p><p>请注意，只需在 <code>!code</code> 后面添加一个空格，这里是两个空格以防止处理。</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">```js</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#B392F0;">data</span><span style="color:#E1E4E8;"> () {</span></span>
 <span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#F97583;">return</span><span style="color:#E1E4E8;"> {</span></span>
@@ -331,7 +313,7 @@
 <span class="line"><span style="color:#E1E4E8;">    }</span></span>
 <span class="line"><span style="color:#E1E4E8;">  }</span></span>
 <span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"></span>
-<span class="line"><span style="color:#24292E;">```js</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`js</span></span>
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> {</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6F42C1;">data</span><span style="color:#24292E;"> () {</span></span>
 <span class="line"><span style="color:#24292E;">    </span><span style="color:#D73A49;">return</span><span style="color:#24292E;"> {</span></span>
@@ -341,7 +323,7 @@
 <span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark has-focused-lines vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">**输出**</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
-<span class="line"><span style="color:#e1e4e8;">```js</span></span>
+<span class="line"><span style="color:#e1e4e8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#e1e4e8;">export default {</span></span>
 <span class="line"><span style="color:#e1e4e8;">  data() {</span></span>
 <span class="line"><span style="color:#e1e4e8;">    return {</span></span>
@@ -351,7 +333,7 @@
 <span class="line"><span style="color:#e1e4e8;">}</span></span></code></pre><pre class="shiki github-light has-focused-lines vp-code-light"><code><span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">**输出**</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
-<span class="line"><span style="color:#24292e;">```js</span></span>
+<span class="line"><span style="color:#24292e;">\`\`\`js</span></span>
 <span class="line"><span style="color:#24292e;">export default {</span></span>
 <span class="line"><span style="color:#24292e;">  data() {</span></span>
 <span class="line"><span style="color:#24292e;">    return {</span></span>
@@ -375,7 +357,7 @@
 <span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark has-diff vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">**输出**</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
-<span class="line"><span style="color:#e1e4e8;">```js</span></span>
+<span class="line"><span style="color:#e1e4e8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#e1e4e8;">export default {</span></span>
 <span class="line"><span style="color:#e1e4e8;">  data () {</span></span>
 <span class="line"><span style="color:#e1e4e8;">    return {</span></span>
@@ -386,7 +368,7 @@
 <span class="line"><span style="color:#e1e4e8;">}</span></span></code></pre><pre class="shiki github-light has-diff vp-code-light"><code><span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">**输出**</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
-<span class="line"><span style="color:#24292e;">```js</span></span>
+<span class="line"><span style="color:#24292e;">\`\`\`js</span></span>
 <span class="line"><span style="color:#24292e;">export default {</span></span>
 <span class="line"><span style="color:#24292e;">  data () {</span></span>
 <span class="line"><span style="color:#24292e;">    return {</span></span>
@@ -394,7 +376,7 @@
 <span class="line diff add"><span style="color:#24292e;">      msg: &#39;已添加&#39; </span></span>
 <span class="line"><span style="color:#24292e;">    }</span></span>
 <span class="line"><span style="color:#24292e;">  }</span></span>
-<span class="line"><span style="color:#24292e;">}</span></span></code></pre></div><h2 id="代码块中的错误和警告" tabindex="-1">代码块中的错误和警告 <a class="header-anchor" href="#代码块中的错误和警告" aria-label="Permalink to &quot;代码块中的错误和警告&quot;">​</a></h2><p>在一行上添加 <code>// [!code warning]</code> 或 <code>// [!code error]</code> 注释将根据需要着色。</p><p><strong>输入</strong></p><p>请注意，只需在 <code>!code</code> 后面添加一个空格，这里是两个空格以防止处理。</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">```js</span></span>
+<span class="line"><span style="color:#24292e;">}</span></span></code></pre></div><h2 id="代码块中的错误和警告" tabindex="-1">代码块中的错误和警告 <a class="header-anchor" href="#代码块中的错误和警告" aria-label="Permalink to &quot;代码块中的错误和警告&quot;">​</a></h2><p>在一行上添加 <code>// [!code warning]</code> 或 <code>// [!code error]</code> 注释将根据需要着色。</p><p><strong>输入</strong></p><p>请注意，只需在 <code>!code</code> 后面添加一个空格，这里是两个空格以防止处理。</p><div class="language-markdown vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">markdown</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#B392F0;">data</span><span style="color:#E1E4E8;"> () {</span></span>
 <span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#F97583;">return</span><span style="color:#E1E4E8;"> {</span></span>
@@ -402,7 +384,7 @@
 <span class="line"><span style="color:#E1E4E8;">      msg: </span><span style="color:#9ECBFF;">&#39;警告&#39;</span><span style="color:#E1E4E8;"> </span><span style="color:#6A737D;">// [!code  warning]</span></span>
 <span class="line"><span style="color:#E1E4E8;">    }</span></span>
 <span class="line"><span style="color:#E1E4E8;">  }</span></span>
-<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">```js</span></span>
+<span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">\`\`\`js</span></span>
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> {</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6F42C1;">data</span><span style="color:#24292E;"> () {</span></span>
 <span class="line"><span style="color:#24292E;">    </span><span style="color:#D73A49;">return</span><span style="color:#24292E;"> {</span></span>
@@ -413,7 +395,7 @@
 <span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki github-dark has-highlighted-lines vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;"></span></span>
 <span class="line"><span style="color:#e1e4e8;">**输出**</span></span>
 <span class="line"><span style="color:#e1e4e8;"></span></span>
-<span class="line"><span style="color:#e1e4e8;">```js</span></span>
+<span class="line"><span style="color:#e1e4e8;">\`\`\`js</span></span>
 <span class="line"><span style="color:#e1e4e8;">export default {</span></span>
 <span class="line"><span style="color:#e1e4e8;">  data() {</span></span>
 <span class="line"><span style="color:#e1e4e8;">    return {</span></span>
@@ -424,7 +406,7 @@
 <span class="line"><span style="color:#e1e4e8;">}</span></span></code></pre><pre class="shiki github-light has-highlighted-lines vp-code-light"><code><span class="line"><span style="color:#24292e;"></span></span>
 <span class="line"><span style="color:#24292e;">**输出**</span></span>
 <span class="line"><span style="color:#24292e;"></span></span>
-<span class="line"><span style="color:#24292e;">```js</span></span>
+<span class="line"><span style="color:#24292e;">\`\`\`js</span></span>
 <span class="line"><span style="color:#24292e;">export default {</span></span>
 <span class="line"><span style="color:#24292e;">  data() {</span></span>
 <span class="line"><span style="color:#24292e;">    return {</span></span>
@@ -440,39 +422,39 @@
 <span class="line"><span style="color:#24292E;">  markdown: {</span></span>
 <span class="line"><span style="color:#24292E;">    lineNumbers: </span><span style="color:#005CC5;">true</span></span>
 <span class="line"><span style="color:#24292E;">  }</span></span>
-<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><p>您可以在您的围栏代码块中添加 <code>:line-numbers</code> / <code>:no-line-numbers</code> 标记以覆盖配置中设置的值。</p><p>您还可以通过在 <code>:line-numbers</code> 后添加 <code>=</code> 来自定义起始行号。例如，<code>:line-numbers=2</code> 表示代码块中的行号将从 <code>2</code> 开始。</p><p><strong>输入</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">```ts {1}</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><p>您可以在您的围栏代码块中添加 <code>:line-numbers</code> / <code>:no-line-numbers</code> 标记以覆盖配置中设置的值。</p><p>您还可以通过在 <code>:line-numbers</code> 后添加 <code>=</code> 来自定义起始行号。例如，<code>:line-numbers=2</code> 表示代码块中的行号将从 <code>2</code> 开始。</p><p><strong>输入</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">\`\`\`ts {1}</span></span>
 <span class="line"><span style="color:#6A737D;">// 默认情况下禁用行号</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">line2</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;这是第2行&#39;</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">line3</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;这是第3行&#39;</span></span>
-<span class="line"><span style="color:#E1E4E8;">```</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">```ts:line-numbers {1}</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`ts:line-numbers {1}</span></span>
 <span class="line"><span style="color:#6A737D;">// 启用行号</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">line2</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;这是第2行&#39;</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">line3</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;这是第3行&#39;</span></span>
-<span class="line"><span style="color:#E1E4E8;">```</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">```ts:line-numbers=2 {1}</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`ts:line-numbers=2 {1}</span></span>
 <span class="line"><span style="color:#6A737D;">// 启用行号并从第2行开始</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">line3</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;这是第3行&#39;</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">line4</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;这是第4行&#39;</span></span>
-<span class="line"><span style="color:#E1E4E8;">```</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">```ts {1}</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">\`\`\`ts {1}</span></span>
 <span class="line"><span style="color:#6A737D;">// 默认情况下禁用行号</span></span>
 <span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">line2</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;这是第2行&#39;</span></span>
 <span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">line3</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;这是第3行&#39;</span></span>
-<span class="line"><span style="color:#24292E;">```</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">```ts:line-numbers {1}</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`ts:line-numbers {1}</span></span>
 <span class="line"><span style="color:#6A737D;">// 启用行号</span></span>
 <span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">line2</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;这是第2行&#39;</span></span>
 <span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">line3</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;这是第3行&#39;</span></span>
-<span class="line"><span style="color:#24292E;">```</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">```ts:line-numbers=2 {1}</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`ts:line-numbers=2 {1}</span></span>
 <span class="line"><span style="color:#6A737D;">// 启用行号并从第2行开始</span></span>
 <span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">line3</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;这是第3行&#39;</span></span>
 <span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">line4</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;这是第4行&#39;</span></span>
-<span class="line"><span style="color:#24292E;">```</span></span></code></pre></div><p><strong>输出</strong></p><div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki github-dark has-highlighted-lines vp-code-dark"><code><span class="line highlighted"><span style="color:#6A737D;">// 默认情况下禁用行号</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`</span></span></code></pre></div><p><strong>输出</strong></p><div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki github-dark has-highlighted-lines vp-code-dark"><code><span class="line highlighted"><span style="color:#6A737D;">// 默认情况下禁用行号</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">line2</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;这是第2行&#39;</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">line3</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;这是第3行&#39;</span></span></code></pre><pre class="shiki github-light has-highlighted-lines vp-code-light"><code><span class="line highlighted"><span style="color:#6A737D;">// 默认情况下禁用行号</span></span>
 <span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">line2</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;这是第2行&#39;</span></span>
@@ -526,7 +508,7 @@
 <span class="line"></span>
 <span class="line"><span style="color:#24292E;">&lt;&lt;&lt; ./snippets/snippet.cs{1,2,4-6 c#:line-numbers}</span></span></code></pre></div><p>如果源语言无法从文件扩展名中推断出，这将很有帮助。</p><h2 id="代码组" tabindex="-1">代码组 <a class="header-anchor" href="#代码组" aria-label="Permalink to &quot;代码组&quot;">​</a></h2><p>您可以像这样组合多个代码块：</p><p><strong>输入</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">::: code-group</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">```js [config.js]</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`js [config.js]</span></span>
 <span class="line"><span style="color:#6A737D;">/**</span></span>
 <span class="line"><span style="color:#6A737D;"> * </span><span style="color:#F97583;">@type</span><span style="color:#6A737D;"> </span><span style="color:#B392F0;">{import(&#39;vitepress&#39;).UserConfig}</span></span>
 <span class="line"><span style="color:#6A737D;"> */</span></span>
@@ -535,9 +517,9 @@
 <span class="line"><span style="color:#E1E4E8;">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> config</span></span>
-<span class="line"><span style="color:#E1E4E8;">```</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">```ts [config.ts]</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`ts [config.ts]</span></span>
 <span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">type</span><span style="color:#E1E4E8;"> { UserConfig } </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;vitepress&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">config</span><span style="color:#F97583;">:</span><span style="color:#E1E4E8;"> </span><span style="color:#B392F0;">UserConfig</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> {</span></span>
@@ -545,11 +527,11 @@
 <span class="line"><span style="color:#E1E4E8;">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> config</span></span>
-<span class="line"><span style="color:#E1E4E8;">```</span></span>
+<span class="line"><span style="color:#E1E4E8;">\`\`\`</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E1E4E8;">:::</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">::: code-group</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">```js [config.js]</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`js [config.js]</span></span>
 <span class="line"><span style="color:#6A737D;">/**</span></span>
 <span class="line"><span style="color:#6A737D;"> * </span><span style="color:#D73A49;">@type</span><span style="color:#6A737D;"> </span><span style="color:#6F42C1;">{import(&#39;vitepress&#39;).UserConfig}</span></span>
 <span class="line"><span style="color:#6A737D;"> */</span></span>
@@ -558,9 +540,9 @@
 <span class="line"><span style="color:#24292E;">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> config</span></span>
-<span class="line"><span style="color:#24292E;">```</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">```ts [config.ts]</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`ts [config.ts]</span></span>
 <span class="line"><span style="color:#D73A49;">import</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">type</span><span style="color:#24292E;"> { UserConfig } </span><span style="color:#D73A49;">from</span><span style="color:#24292E;"> </span><span style="color:#032F62;">&#39;vitepress&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">config</span><span style="color:#D73A49;">:</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">UserConfig</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> {</span></span>
@@ -568,9 +550,9 @@
 <span class="line"><span style="color:#24292E;">}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> config</span></span>
-<span class="line"><span style="color:#24292E;">```</span></span>
+<span class="line"><span style="color:#24292E;">\`\`\`</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">:::</span></span></code></pre></div><p><strong>输出</strong></p><div class="vp-code-group vp-adaptive-theme"><div class="tabs"><input type="radio" name="group-cr5rX" id="tab-uGd3ROS" checked="checked"><label for="tab-uGd3ROS">config.js</label><input type="radio" name="group-cr5rX" id="tab-fIM1IBd"><label for="tab-fIM1IBd">config.ts</label></div><div class="blocks"><div class="language-js vp-adaptive-theme active"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#6A737D;">/**</span></span>
+<span class="line"><span style="color:#24292E;">:::</span></span></code></pre></div><p><strong>输出</strong></p><div class="vp-code-group vp-adaptive-theme"><div class="tabs"><input type="radio" name="group-OxKhq" id="tab-tqPYYZt" checked="checked"><label for="tab-tqPYYZt">config.js</label><input type="radio" name="group-OxKhq" id="tab-2tLREKk"><label for="tab-2tLREKk">config.ts</label></div><div class="blocks"><div class="language-js vp-adaptive-theme active"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#6A737D;">/**</span></span>
 <span class="line"><span style="color:#6A737D;"> * </span><span style="color:#F97583;">@type</span><span style="color:#6A737D;"> </span><span style="color:#B392F0;">{import(&#39;vitepress&#39;).UserConfig}</span></span>
 <span class="line"><span style="color:#6A737D;"> */</span></span>
 <span class="line"><span style="color:#F97583;">const</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">config</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> {</span></span>
@@ -616,7 +598,7 @@
 <span class="line"></span>
 <span class="line"><span style="color:#24292E;">&lt;&lt;&lt; ./snippets/snippet-with-region.js#snippet{1,2 ts:line-numbers} [</span><span style="color:#032F62;text-decoration:underline;">带有区域的片段</span><span style="color:#24292E;">]</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">:::</span></span></code></pre></div><p><strong>输出</strong></p><div class="vp-code-group vp-adaptive-theme"><div class="tabs"><input type="radio" name="group-fR2lE" id="tab-79bXJjJ" checked="checked"><label for="tab-79bXJjJ">snippet.js</label><input type="radio" name="group-fR2lE" id="tab-AtRJj80"><label for="tab-AtRJj80">带有区域的片段</label></div><div class="blocks"><div class="language-js vp-adaptive-theme active"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">function</span><span style="color:#E1E4E8;"> () {</span></span>
+<span class="line"><span style="color:#24292E;">:::</span></span></code></pre></div><p><strong>输出</strong></p><div class="vp-code-group vp-adaptive-theme"><div class="tabs"><input type="radio" name="group-89pBh" id="tab-2wFilsd" checked="checked"><label for="tab-2wFilsd">snippet.js</label><input type="radio" name="group-89pBh" id="tab-6XW67Xn"><label for="tab-6XW67Xn">带有区域的片段</label></div><div class="blocks"><div class="language-js vp-adaptive-theme active"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">function</span><span style="color:#E1E4E8;"> () {</span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#6A737D;">// ..</span></span>
 <span class="line"><span style="color:#E1E4E8;">}</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#D73A49;">export</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">default</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">function</span><span style="color:#24292E;"> () {</span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#6A737D;">// ..</span></span>
@@ -636,11 +618,11 @@
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold;">### 配置</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">可以使用 </span><span style="color:#79B8FF;">`.foorc.json`</span><span style="color:#E1E4E8;"> 创建。</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">一些入门内容。</span></span>
+<span class="line"><span style="color:#E1E4E8;">可以使用 </span><span style="color:#79B8FF;">\`.foorc.json\`</span><span style="color:#E1E4E8;"> 创建。</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">一些入门内容。</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#005CC5;font-weight:bold;">### 配置</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">可以使用 </span><span style="color:#005CC5;">`.foorc.json`</span><span style="color:#24292E;"> 创建。</span></span></code></pre></div><p><strong>等效代码</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#79B8FF;font-weight:bold;"># 文档</span></span>
+<span class="line"><span style="color:#24292E;">可以使用 </span><span style="color:#005CC5;">\`.foorc.json\`</span><span style="color:#24292E;"> 创建。</span></span></code></pre></div><p><strong>等效代码</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#79B8FF;font-weight:bold;"># 文档</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold;">## 基础</span></span>
 <span class="line"></span>
@@ -648,7 +630,7 @@
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold;">### 配置</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">可以使用 </span><span style="color:#79B8FF;">`.foorc.json`</span><span style="color:#E1E4E8;"> 创建。</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#005CC5;font-weight:bold;"># 文档</span></span>
+<span class="line"><span style="color:#E1E4E8;">可以使用 </span><span style="color:#79B8FF;">\`.foorc.json\`</span><span style="color:#E1E4E8;"> 创建。</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#005CC5;font-weight:bold;"># 文档</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#005CC5;font-weight:bold;">## 基础</span></span>
 <span class="line"></span>
@@ -656,7 +638,7 @@
 <span class="line"></span>
 <span class="line"><span style="color:#005CC5;font-weight:bold;">### 配置</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">可以使用 </span><span style="color:#005CC5;">`.foorc.json`</span><span style="color:#24292E;"> 创建。</span></span></code></pre></div><p>它还支持选择行范围：</p><p><strong>输入</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#79B8FF;font-weight:bold;"># 文档</span></span>
+<span class="line"><span style="color:#24292E;">可以使用 </span><span style="color:#005CC5;">\`.foorc.json\`</span><span style="color:#24292E;"> 创建。</span></span></code></pre></div><p>它还支持选择行范围：</p><p><strong>输入</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#79B8FF;font-weight:bold;"># 文档</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold;">## 基础</span></span>
 <span class="line"></span>
@@ -668,23 +650,23 @@
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold;">### 配置</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">可以使用 </span><span style="color:#79B8FF;">`.foorc.json`</span><span style="color:#E1E4E8;"> 创建。</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">一些入门内容。</span></span>
+<span class="line"><span style="color:#E1E4E8;">可以使用 </span><span style="color:#79B8FF;">\`.foorc.json\`</span><span style="color:#E1E4E8;"> 创建。</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">一些入门内容。</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#005CC5;font-weight:bold;">### 配置</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">可以使用 </span><span style="color:#005CC5;">`.foorc.json`</span><span style="color:#24292E;"> 创建。</span></span></code></pre></div><p><strong>等效代码</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#79B8FF;font-weight:bold;"># 文档</span></span>
+<span class="line"><span style="color:#24292E;">可以使用 </span><span style="color:#005CC5;">\`.foorc.json\`</span><span style="color:#24292E;"> 创建。</span></span></code></pre></div><p><strong>等效代码</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#79B8FF;font-weight:bold;"># 文档</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold;">## 基础</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;font-weight:bold;">### 配置</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#E1E4E8;">可以使用 </span><span style="color:#79B8FF;">`.foorc.json`</span><span style="color:#E1E4E8;"> 创建。</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#005CC5;font-weight:bold;"># 文档</span></span>
+<span class="line"><span style="color:#E1E4E8;">可以使用 </span><span style="color:#79B8FF;">\`.foorc.json\`</span><span style="color:#E1E4E8;"> 创建。</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#005CC5;font-weight:bold;"># 文档</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#005CC5;font-weight:bold;">## 基础</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#005CC5;font-weight:bold;">### 配置</span></span>
 <span class="line"></span>
-<span class="line"><span style="color:#24292E;">可以使用 </span><span style="color:#005CC5;">`.foorc.json`</span><span style="color:#24292E;"> 创建。</span></span></code></pre></div><p>所选行</p><p>范围的格式可以是：<code>{3,}</code>、<code>{,10}</code>、<code>{1,10}</code></p><p>::: 警告 请注意，如果文件不存在，此功能不会引发错误。因此，在使用此功能时，请确保内容按预期呈现。 :::</p><h2 id="数学方程式" tabindex="-1">数学方程式 <a class="header-anchor" href="#数学方程式" aria-label="Permalink to &quot;数学方程式&quot;">​</a></h2><p>目前，这是可选择的。要启用它，您需要安装 <code>markdown-it-mathjax3</code> 并在配置文件中设置 <code>markdown.math</code> 为 <code>true</code>：</p><div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#B392F0;">npm</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">add</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">-D</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">markdown-it-mathjax3</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#6F42C1;">npm</span><span style="color:#24292E;"> </span><span style="color:#032F62;">add</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">-D</span><span style="color:#24292E;"> </span><span style="color:#032F62;">markdown-it-mathjax3</span></span></code></pre></div><div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#6A737D;">// .vitepress/config.ts</span></span>
+<span class="line"><span style="color:#24292E;">可以使用 </span><span style="color:#005CC5;">\`.foorc.json\`</span><span style="color:#24292E;"> 创建。</span></span></code></pre></div><p>所选行</p><p>范围的格式可以是：<code>{3,}</code>、<code>{,10}</code>、<code>{1,10}</code></p><p>::: 警告 请注意，如果文件不存在，此功能不会引发错误。因此，在使用此功能时，请确保内容按预期呈现。 :::</p><h2 id="数学方程式" tabindex="-1">数学方程式 <a class="header-anchor" href="#数学方程式" aria-label="Permalink to &quot;数学方程式&quot;">​</a></h2><p>目前，这是可选择的。要启用它，您需要安装 <code>markdown-it-mathjax3</code> 并在配置文件中设置 <code>markdown.math</code> 为 <code>true</code>：</p><div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#B392F0;">npm</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">add</span><span style="color:#E1E4E8;"> </span><span style="color:#79B8FF;">-D</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">markdown-it-mathjax3</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#6F42C1;">npm</span><span style="color:#24292E;"> </span><span style="color:#032F62;">add</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">-D</span><span style="color:#24292E;"> </span><span style="color:#032F62;">markdown-it-mathjax3</span></span></code></pre></div><div class="language-ts vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">ts</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#6A737D;">// .vitepress/config.ts</span></span>
 <span class="line"><span style="color:#F97583;">export</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">default</span><span style="color:#E1E4E8;"> {</span></span>
 <span class="line"><span style="color:#E1E4E8;">  markdown: {</span></span>
 <span class="line"><span style="color:#E1E4E8;">    math: </span><span style="color:#79B8FF;">true</span></span>
@@ -694,25 +676,25 @@
 <span class="line"><span style="color:#24292E;">  markdown: {</span></span>
 <span class="line"><span style="color:#24292E;">    math: </span><span style="color:#005CC5;">true</span></span>
 <span class="line"><span style="color:#24292E;">  }</span></span>
-<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><p><strong>输入</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">当 $a \ne 0$ 时，方程 $(ax^2 + bx + c = 0)$ 有两个解，它们是</span></span>
-<span class="line"><span style="color:#E1E4E8;">$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div><p><strong>输入</strong></p><div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#E1E4E8;">当 $a \\ne 0$ 时，方程 $(ax^2 + bx + c = 0)$ 有两个解，它们是</span></span>
+<span class="line"><span style="color:#E1E4E8;">$$ x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a} $$</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E1E4E8;font-weight:bold;">**麦克斯韦方程式:**</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#E1E4E8;">| 方程式                                                                                                                                                                  | 描述                                                                                    |</span></span>
 <span class="line"><span style="color:#E1E4E8;">| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |</span></span>
-<span class="line"><span style="color:#E1E4E8;">| $\nabla \cdot \vec{\mathbf{B}}  = 0$                                                                                                                                      | $\vec{\mathbf{B}}$ 的散度为零                                                        |</span></span>
-<span class="line"><span style="color:#E1E4E8;">| $\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t}  = \vec{\mathbf{0}}$                                                          | $\vec{\mathbf{E}}$ 的旋度与 $\vec{\mathbf{B}}$ 的变化率成比例                            |</span></span>
-<span class="line"><span style="color:#E1E4E8;">| $\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} = \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} = 4 \pi \rho$ | </span><span style="color:#E1E4E8;font-style:italic;">_什么？_</span><span style="color:#E1E4E8;">                                                                                 |</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">当 $a \ne 0$ 时，方程 $(ax^2 + bx + c = 0)$ 有两个解，它们是</span></span>
-<span class="line"><span style="color:#24292E;">$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$</span></span>
+<span class="line"><span style="color:#E1E4E8;">| $\\nabla \\cdot \\vec{\\mathbf{B}}  = 0$                                                                                                                                      | $\\vec{\\mathbf{B}}$ 的散度为零                                                        |</span></span>
+<span class="line"><span style="color:#E1E4E8;">| $\\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t}  = \\vec{\\mathbf{0}}$                                                          | $\\vec{\\mathbf{E}}$ 的旋度与 $\\vec{\\mathbf{B}}$ 的变化率成比例                            |</span></span>
+<span class="line"><span style="color:#E1E4E8;">| $\\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} = \\frac{4\\pi}{c}\\vec{\\mathbf{j}}    \\nabla \\cdot \\vec{\\mathbf{E}} = 4 \\pi \\rho$ | </span><span style="color:#E1E4E8;font-style:italic;">_什么？_</span><span style="color:#E1E4E8;">                                                                                 |</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#24292E;">当 $a \\ne 0$ 时，方程 $(ax^2 + bx + c = 0)$ 有两个解，它们是</span></span>
+<span class="line"><span style="color:#24292E;">$$ x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a} $$</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292E;font-weight:bold;">**麦克斯韦方程式:**</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#24292E;">| 方程式                                                                                                                                                                  | 描述                                                                                    |</span></span>
 <span class="line"><span style="color:#24292E;">| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |</span></span>
-<span class="line"><span style="color:#24292E;">| $\nabla \cdot \vec{\mathbf{B}}  = 0$                                                                                                                                      | $\vec{\mathbf{B}}$ 的散度为零                                                        |</span></span>
-<span class="line"><span style="color:#24292E;">| $\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t}  = \vec{\mathbf{0}}$                                                          | $\vec{\mathbf{E}}$ 的旋度与 $\vec{\mathbf{B}}$ 的变化率成比例                            |</span></span>
-<span class="line"><span style="color:#24292E;">| $\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} = \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} = 4 \pi \rho$ | </span><span style="color:#24292E;font-style:italic;">_什么？_</span><span style="color:#24292E;">                                                                                 |</span></span></code></pre></div><p><strong>输出</strong></p><p>当 $a \ne 0$ 时，方程 $(ax^2 + bx + c = 0)$ 有两个解，它们是 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$</p><p><strong>麦克斯韦方程式:</strong></p><table><thead><tr><th>方程式</th><th>描述</th></tr></thead><tbody><tr><td>$\nabla \cdot \vec{\mathbf{B}} = 0$</td><td>$\vec{\mathbf{B}}$ 的散度为零</td></tr><tr><td>$\nabla \times \vec{\mathbf{E}}, +, \frac1c, \frac{\partial\vec{\mathbf{B}}}{\partial t} = \vec{\mathbf{0}}$</td><td>$\vec{\mathbf{E}}$ 的旋度与 $\vec{\mathbf{B}}$ 的变化率成比例</td></tr><tr><td>$\nabla \times \vec{\mathbf{B}} -, \frac1c, \frac{\partial\vec{\mathbf{E}}}{\partial t} = \frac{4\pi}{c}\vec{\mathbf{j}} \nabla \cdot \vec{\mathbf{E}} = 4 \pi \rho$</td><td><em>什么？</em></td></tr></tbody></table><h2 id="高级配置" tabindex="-1">高级配置 <a class="header-anchor" href="#高级配置" aria-label="Permalink to &quot;高级配置&quot;">​</a></h2><p>VitePress 使用 <a href="https://github.com/markdown-it/markdown-it" target="_blank" rel="noreferrer">markdown-it</a> 作为 Markdown 渲染器。上述许多扩展是通过自定义插件实现的。您可以使用 <code>.vitepress/config.js</code> 中的 <code>markdown</code> 选项进一步定制 <code>markdown-it</code> 实例：</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> markdownItAnchor </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;markdown-it-anchor&#39;</span></span>
+<span class="line"><span style="color:#24292E;">| $\\nabla \\cdot \\vec{\\mathbf{B}}  = 0$                                                                                                                                      | $\\vec{\\mathbf{B}}$ 的散度为零                                                        |</span></span>
+<span class="line"><span style="color:#24292E;">| $\\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t}  = \\vec{\\mathbf{0}}$                                                          | $\\vec{\\mathbf{E}}$ 的旋度与 $\\vec{\\mathbf{B}}$ 的变化率成比例                            |</span></span>
+<span class="line"><span style="color:#24292E;">| $\\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} = \\frac{4\\pi}{c}\\vec{\\mathbf{j}}    \\nabla \\cdot \\vec{\\mathbf{E}} = 4 \\pi \\rho$ | </span><span style="color:#24292E;font-style:italic;">_什么？_</span><span style="color:#24292E;">                                                                                 |</span></span></code></pre></div><p><strong>输出</strong></p><p>当 $a \\ne 0$ 时，方程 $(ax^2 + bx + c = 0)$ 有两个解，它们是 $$ x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a} $$</p><p><strong>麦克斯韦方程式:</strong></p><table><thead><tr><th>方程式</th><th>描述</th></tr></thead><tbody><tr><td>$\\nabla \\cdot \\vec{\\mathbf{B}} = 0$</td><td>$\\vec{\\mathbf{B}}$ 的散度为零</td></tr><tr><td>$\\nabla \\times \\vec{\\mathbf{E}}, +, \\frac1c, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t} = \\vec{\\mathbf{0}}$</td><td>$\\vec{\\mathbf{E}}$ 的旋度与 $\\vec{\\mathbf{B}}$ 的变化率成比例</td></tr><tr><td>$\\nabla \\times \\vec{\\mathbf{B}} -, \\frac1c, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} = \\frac{4\\pi}{c}\\vec{\\mathbf{j}} \\nabla \\cdot \\vec{\\mathbf{E}} = 4 \\pi \\rho$</td><td><em>什么？</em></td></tr></tbody></table><h2 id="高级配置" tabindex="-1">高级配置 <a class="header-anchor" href="#高级配置" aria-label="Permalink to &quot;高级配置&quot;">​</a></h2><p>VitePress 使用 <a href="https://github.com/markdown-it/markdown-it" target="_blank" rel="noreferrer">markdown-it</a> 作为 Markdown 渲染器。上述许多扩展是通过自定义插件实现的。您可以使用 <code>.vitepress/config.js</code> 中的 <code>markdown</code> 选项进一步定制 <code>markdown-it</code> 实例：</p><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki github-dark vp-code-dark"><code><span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> markdownItAnchor </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;markdown-it-anchor&#39;</span></span>
 <span class="line"><span style="color:#F97583;">import</span><span style="color:#E1E4E8;"> markdownItFoo </span><span style="color:#F97583;">from</span><span style="color:#E1E4E8;"> </span><span style="color:#9ECBFF;">&#39;markdown-it-foo&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#79B8FF;">module</span><span style="color:#E1E4E8;">.</span><span style="color:#79B8FF;">exports</span><span style="color:#E1E4E8;"> </span><span style="color:#F97583;">=</span><span style="color:#E1E4E8;"> {</span></span>
@@ -752,8 +734,4 @@
 <span class="line"><span style="color:#24292E;">      md.</span><span style="color:#6F42C1;">use</span><span style="color:#24292E;">(markdownItFoo)</span></span>
 <span class="line"><span style="color:#24292E;">    }</span></span>
 <span class="line"><span style="color:#24292E;">  }</span></span>
-<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div></div></div></main><footer class="VPDocFooter" data-v-8800a756 data-v-044fa7b8><!--[--><!--]--><!----><nav class="prev-next" data-v-044fa7b8><div class="pager" data-v-044fa7b8><!----></div><div class="pager" data-v-044fa7b8><a class="pager-link next" href="/components/%E6%8C%89%E9%92%AE%E7%BB%84%E4%BB%B6.html" data-v-044fa7b8><span class="desc" data-v-044fa7b8>Next page</span><span class="title" data-v-044fa7b8>基础组件</span></a></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
-    <script>window.__VP_HASH_MAP__=JSON.parse("{\"components_输入框组件.md\":\"5f074ece\",\"components_按钮组件.md\":\"923c71ff\",\"index.md\":\"9c554e5e\",\"docs_安装.md\":\"ff12d2ec\",\"docs_配置.md\":\"d9cbad48\",\"docs_markdown语法.md\":\"e8ca485c\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh_CN\",\"dir\":\"ltr\",\"title\":\"unmono\",\"description\":\"unmono description\",\"base\":\"/\",\"head\":[],\"appearance\":true,\"themeConfig\":{\"lang\":\"zh_CN\",\"search\":{\"provider\":\"local\",\"options\":{\"translations\":{\"button\":{\"buttonText\":\"搜索\"},\"modal\":{\"resetButtonTitle\":\"重新搜索\",\"backButtonTitle\":\"返回\",\"noResultsText\":\"无内容\",\"footer\":{\"selectText\":\"选择\",\"navigateText\":\"选择\",\"closeText\":\"关闭\"}}}}},\"outlineTitle\":\"大纲\",\"notFound\":{\"quote\":\"但如果你不改变你的方向，如果你继续寻找，你可能会在你前进的地方结束。\",\"title\":\"页面走丢了\",\"linkText\":\"回到首页\"},\"sidebar\":[{\"text\":\"基础组件\",\"collapsed\":false,\"link\":\"components/按钮组件.md\",\"items\":[{\"group\":\"基础组件\",\"text\":\"按钮组件\",\"link\":\"components/按钮组件.md\"},{\"group\":\"基础组件\",\"text\":\"输入框组件\",\"link\":\"components/输入框组件.md\"}]},{\"text\":\"写作\",\"collapsed\":false,\"link\":\"docs/Markdown语法.md\",\"items\":[{\"group\":\"写作\",\"text\":\"Markdown语法\",\"link\":\"docs/Markdown语法.md\"}]},{\"text\":\"快速开始\",\"collapsed\":false,\"link\":\"docs/安装.md\",\"items\":[{\"group\":\"快速开始\",\"text\":\"安装\",\"link\":\"docs/安装.md\"},{\"group\":\"快速开始\",\"text\":\"配置\",\"link\":\"docs/配置.md\"}]}],\"nav\":[{\"text\":\"首页\",\"link\":\"/\"},{\"text\":\"文档\",\"link\":\"components/按钮组件.md\"}]},\"locales\":{},\"scrollOffset\":90,\"cleanUrls\":false}");</script>
-    
-  </body>
-</html>
+<span class="line"><span style="color:#24292E;">}</span></span></code></pre></div>`,190),o=[e];function c(t,r,i,y,E,d){return n(),a("div",null,o)}const u=s(p,[["render",c]]);export{g as __pageData,u as default};

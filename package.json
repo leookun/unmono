@@ -12,7 +12,7 @@
     "output": "dist",
     "publicPath": "/",
     "documentPath": "./explame",
-    "documentBuildPath": "./doc-dist",
+    "documentBuildPath": "./docs",
     "description": "unmono description",
     "title": "unmono",
     "dts": true,
