@@ -35,9 +35,9 @@ export const getUseConfig =()=>{
             m.includes('punycode') ? [] : [m, `node:${m}`]
         )
     ]
-    const useConfig: UserConfig = merge(PKG.unmono, {
+    const useConfig: UserConfig = merge(PKG.unmono||{}, {
         // 构建入口(必填) 
-        entry: ["components/index.ts"],
+        entry: ["src/index.ts"],
         // 构建位置(默认为dist-lib目录) 
         output: "dist-lib",
         // 文档publicPath路径(默认为/)
@@ -104,7 +104,7 @@ export const hookUserConfig = (config: VitepressConfig) =>{
     config.site.base = useConfig.publicPath || '/'
     config.site.description = useConfig.description || 'unmono description'
     config.site.title = useConfig.title || 'Unmono'
-    config.site.appearance = true
+    config.site.appearance = true;
 
     const sidebar = config.pages.filter(name => name !== 'index.md').map((pageName) => {
         const { title, group } = readTitleAndGroup(fs.readFileSync(resolve(DOCUMENT_ROOT, `${pageName}`), 'utf8'))
@@ -130,7 +130,7 @@ export const hookUserConfig = (config: VitepressConfig) =>{
         finalSidebar = sidebar
     }
     config.tempDir = resolve(DOCUMENT_ROOT, '.unmono/.temp')
-
+    console.log(finalSidebar)
     config.site.themeConfig = {
         lang: 'zh_CN',
         search: {
@@ -165,10 +165,10 @@ export const hookUserConfig = (config: VitepressConfig) =>{
                 text: "首页",
                 link: "/",
             },
-            {
+            ...(finalSidebar?.[0]?[{
                 text: '文档',
                 link: finalSidebar?.[0]?.link
-            }
+            }]:[])
         ]
     } as DefaultTheme.Config
     return config as VitepressConfig

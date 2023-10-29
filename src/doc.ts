@@ -2,6 +2,7 @@
 import { createVitePressPlugin, resolveConfig } from 'vitepress-library'
 import { createServer as createViteServer, type ServerOptions } from 'vite'
 import { getUseConfig, hookUserConfig } from "./userConfig"
+import { resolve } from "path"
 
 const {  DOCUMENT_ROOT } = getUseConfig()
 
@@ -10,29 +11,45 @@ export async function createServer(
   recreateServer?: () => Promise<void>
 ) {
   const config = hookUserConfig(await resolveConfig(DOCUMENT_ROOT))
-  
   return createViteServer({
     root: config.srcDir,
     base: config.site.base,
     cacheDir: config.cacheDir,
-    plugins: [await createVitePressPlugin(config, false, {}, {}, recreateServer) as any],
+    build:{
+      lib: {
+        entry: [],
+      },
+    },
+    plugins: [await createVitePressPlugin(config, false, {}, {}, recreateServer) as any, {
+      enforce: "pre",
+      name: 'no-resolve-html',
+      resolveId(source, importer, options) {
+        if (source.endsWith('.html')){
+          return ''
+        }
+      },
+      load(source, options) {
+        if (source.endsWith('.html')) {
+          return {
+            code: ''
+          }
+        }
+      },
+    }],
     server: serverOptions,
     customLogger: config.logger,
-    configFile: config.vite?.configFile
-  })
+    configFile: false,
+  }).catch(err=>{})
 }
 
 export const createDevServer = async () => {
   const server = await createServer({
+
     port:5001,
     hmr:true,
     host:'0.0.0.0',
-    watch:{
-      persistent:true,
-      ignoreInitial:false,
-    }
+    watch:{ }
   }, async () => {
-    console.log('reacrt')
     await server.close()
     await createDevServer()
   })
