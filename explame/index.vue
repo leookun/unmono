@@ -3,14 +3,16 @@
     <div class="container my-hero">
       <MyButton/>
       <MyInput style="margin-top: 20px;"/>
+      <slot />
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
+defineProps<{name?:string}>()
 import MyButton from "./components/MyButton.vue"
 import MyInput from "./components/MyInput.vue"
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .index {
   margin-top: calc((var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1);
   padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px;

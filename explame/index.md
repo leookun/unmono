@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Unmono
-  text: Vite & Vitepress 驱动的文档扫描器和组件库构建工具
-  # tagline: 📦 开箱即用的组件库构建工具 !
+  text: Vite & Vitepress 驱动的文档扫描器
+  tagline: 📦 开箱即用的库构建工具 
   actions:
     - theme: brand
       text: 开始使用
@@ -16,5 +16,19 @@ hero:
 ---
 <script setup>
 import Index from './index.vue'
+const members = [
+  {
+    avatar: 'https://www.github.com/yyx990803.png',
+    name: 'Evan You',
+    title: 'Creator',
+    links: [
+      { icon: 'github', link: 'https://github.com/yyx990803' },
+      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
+    ]
+  },
+]
 </script>
-<Index/>
+<Index>
+</Index>
+
+

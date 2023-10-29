@@ -1,6 +1,7 @@
 # Logs
 logs
 .unmono
+dist-lib
 dist 
 node_modules
 *.log

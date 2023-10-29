@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "jsx":"preserve"
+  },
+  "include": ["explame/**/*"],
+  "exclude": ["**/node_modules/**"]
+}

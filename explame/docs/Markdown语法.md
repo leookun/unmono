@@ -79,7 +79,7 @@ lang: en-US
 
 这些数据将在页面的其余部分中可用，以及所有自定义和主题组件。
 
-有关更多详细信息，请参见 [Frontmatter](../reference/frontmatter-config)。
+
 
 ## GitHub风格表格
 
@@ -312,7 +312,7 @@ export default {
 
 有关 Shiki 仓库上的 [有效语言的列表](https://github.com/shikijs/shiki/blob/main/docs/languages.md)。
 
-您还可以在应用配置中自定义语法高亮主题。有关更多详细信息，请参见 [`markdown` 选项](../reference/site-config#markdown)。
+
 
 ## 代码块中的行高亮
 
@@ -525,7 +525,7 @@ export default {
 }
 ```
 
-有关更多详细信息，请参见[`markdown`选项](../reference/site-config#markdown)。
+
 
 您可以在您的围栏代码块中添加 `:line-numbers` / `:no-line-numbers` 标记以覆盖配置中设置的值。
 
@@ -889,5 +889,5 @@ module.exports = {
 }
 ```
 
-在 [Config Reference: App Config](../reference/site-config#markdown) 中查看完整的可配置属性列表。
+
 

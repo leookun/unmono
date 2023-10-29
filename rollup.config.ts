@@ -13,7 +13,7 @@ const ROOT = process.cwd()
 const r = (p:string) => resolve(ROOT,  p)
 const pkg = JSON.parse(fs.readFileSync(resolve(ROOT, 'package.json'), 'utf-8'))
 const external = [
-    ...Object.keys(pkg.devDependencies ||{}),
+    ...Object.keys(pkg.dependencies ||{}),
     ...Object.keys(pkg.peerDependencies||{}),
     ...builtinModules.flatMap((m) =>
         m.includes('punycode') ? [] : [m, `node:${m}`]
@@ -37,7 +37,7 @@ const plugins = [
     json()
 ]
 const esmBuild: RollupOptions = {
-    input: [r('src/index.ts'), r('src/cli.ts')],
+    input: [r('src/doc.ts'), r('src/cli.ts'), r('src/index.ts')],
     output: {
         format: 'esm',
         entryFileNames: `[name].js`,
