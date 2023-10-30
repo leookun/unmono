@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { type DefaultTheme, resolveConfig } from 'vitepress-library'
+import { type DefaultTheme, resolveConfig, type UserConfig as ViteUserConfig } from 'vitepress-library'
 import { builtinModules } from 'module'
 import fs from 'fs'
 export function merge(...objects) {
@@ -26,7 +26,13 @@ export type UserConfig={
 }
 export const getUseConfig =()=>{
     const PWD = resolve(process.cwd(),'./')
-    const PKG = JSON.parse(fs.readFileSync(resolve(PWD, './package.json'), 'utf-8'))
+    let PKG
+    try {
+        PKG = JSON.parse(fs.readFileSync(resolve(PWD, './package.json') || {}, 'utf-8'))
+    } catch (error) {
+        PKG={}
+    }
+    
     const DOCUMENT_ROOT = resolve(PWD, PKG.unmono?.documentPath || '.')
     const external = [
         ...Object.keys(PKG.dependencies || {}),
@@ -94,18 +100,27 @@ export function groupedBy(originalArray, groupName) {
         return result;
     }, {});
 }
-
-export const hookUserConfig = (config: VitepressConfig) =>{
+export const afterResolveUser = (config: ViteUserConfig )=>{
+    console.log(config)
+    config.rewrites={
+        ':path/README.md':':path/index.md',
+        ':path/readme.md':':path/index.md',
+        'README.md':'index.md',
+        'readme.md':'index.md',
+        
+    }
+}
+export const hookUserConfig=(mode:'build'|'dev')=> (config: VitepressConfig) =>{
     const { DOCUMENT_ROOT, useConfig, PWD } = getUseConfig()
-    config.cacheDir = resolve(DOCUMENT_ROOT, '.unmono/cache')
+    config.cacheDir = resolve(DOCUMENT_ROOT, `.unmono/cache-${mode}`)
     config.outDir = resolve(PWD, useConfig.documentBuildPath)
-    config.tempDir = resolve(DOCUMENT_ROOT, "./.unmono/.temp")
+    config.tempDir = resolve(DOCUMENT_ROOT, `./.unmono/.temp-${mode}`)
     config.site.lang = 'zh_CN'
     config.site.base = useConfig.publicPath || '/'
     config.site.description = useConfig.description || 'unmono description'
     config.site.title = useConfig.title || 'Unmono'
     config.site.appearance = true;
-
+   
     const sidebar = config.pages.filter(name => name !== 'index.md').map((pageName) => {
         const { title, group } = readTitleAndGroup(fs.readFileSync(resolve(DOCUMENT_ROOT, `${pageName}`), 'utf8'))
         return {
@@ -130,7 +145,6 @@ export const hookUserConfig = (config: VitepressConfig) =>{
         finalSidebar = sidebar
     }
     config.tempDir = resolve(DOCUMENT_ROOT, '.unmono/.temp')
-    console.log(finalSidebar)
     config.site.themeConfig = {
         lang: 'zh_CN',
         search: {
@@ -171,5 +185,6 @@ export const hookUserConfig = (config: VitepressConfig) =>{
             }]:[])
         ]
     } as DefaultTheme.Config
+    console.log(config)
     return config as VitepressConfig
 }

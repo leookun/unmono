@@ -15,7 +15,6 @@ switch (mode){
         }
         break
     case 'build':
-        console.log('build')
         if (arg === '--watch') {
             buildlib(true)
             break

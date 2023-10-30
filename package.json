@@ -1,6 +1,6 @@
 {
   "name": "unmono",
-  "version": "0.0.16",
+  "version": "0.0.21",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
@@ -27,7 +27,8 @@
   "scripts": {
     "typescript-run": "cross-env NODE_NO_WARNINGS=1 node --loader @esbuild-kit/esm-loader",
     "build-myself": "rimraf dist &&  npm run typescript-run script/build.self.ts",
-    "start": "rimraf dist &&  npm run build-myself && node dist/cli.js doc",
+    "start": "rimraf dist &&  npm run build-myself && node dist/cli.js doc --dev",
+    "build": "rimraf docs &&  npm run build-myself && node dist/cli.js doc --build",
     "release": "pnpm build-myself && pnpm release-npm ",
     "release-npm": "pnpm publish --registry=https://registry.npmjs.org/ --no-git-checks "
   },
@@ -47,7 +48,7 @@
     "vite": "^4.4.6",
     "vite-plugin-dts": "^3.5.1",
     "vite-tsconfig-paths": "^4.2.1",
-    "vitepress-library": "^1.0.4",
+    "vitepress-library": "^1.0.6",
     "vue": "^3.3.7"
   }
 }

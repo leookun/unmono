@@ -36,7 +36,8 @@ export const buildlib = async (iswatch = false) => {
             rollupOptions: {
                 external: external,
                 output: {
-                    dir: resolve(PWD, useConfig.output)
+                    dir: resolve(PWD, useConfig.output),
+                    banner: '#!/usr/bin/env node',
                 }
             }
         }

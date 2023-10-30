@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { createVitePressPlugin, resolveConfig } from 'vitepress-library'
 import { createServer as createViteServer, type ServerOptions } from 'vite'
-import { getUseConfig, hookUserConfig } from "./userConfig"
+import { getUseConfig, hookUserConfig,afterResolveUser } from "./userConfig"
 import { resolve } from "path"
 
 const {  DOCUMENT_ROOT } = getUseConfig()
@@ -10,11 +10,16 @@ export async function createServer(
   serverOptions: ServerOptions & { base?: string } = {},
   recreateServer?: () => Promise<void>
 ) {
-  const config = hookUserConfig(await resolveConfig(DOCUMENT_ROOT))
+  const config = hookUserConfig('dev')(await resolveConfig(DOCUMENT_ROOT, 'serve', 'development', afterResolveUser))
+  
   return createViteServer({
     root: config.srcDir,
     base: config.site.base,
     cacheDir: config.cacheDir,
+    optimizeDeps:{
+      entries:[],
+      force:false
+    },
     build:{
       lib: {
         entry: [],
