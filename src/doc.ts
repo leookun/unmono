@@ -49,16 +49,23 @@ export async function createServer(
 
 export const createDevServer = async () => {
   const server = await createServer({
-
     port:5001,
     hmr:true,
     host:'0.0.0.0',
     watch:{ }
   }, async () => {
-    await server.close()
-    await createDevServer()
+    if (server) {
+      console.log('hmr...')
+      await server?.close?.()
+      await createDevServer()
+    }
   })
-  
-  await server.listen()
-  server.printUrls()
+  if(!server){
+    console.log('服务启动失败，检查markdonw中文中是否有未知组件')
+    process.exit()
+  }
+  if (server){
+    await server?.listen?.()
+    server.printUrls()
+  }
 }

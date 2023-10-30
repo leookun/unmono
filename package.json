@@ -1,6 +1,6 @@
 {
   "name": "unmono",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
@@ -48,7 +48,7 @@
     "vite": "^4.4.6",
     "vite-plugin-dts": "^3.5.1",
     "vite-tsconfig-paths": "^4.2.1",
-    "vitepress-library": "^1.0.6",
+    "vitepress-library": "^1.0.7",
     "vue": "^3.3.7"
   }
 }

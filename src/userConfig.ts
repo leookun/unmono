@@ -109,6 +109,7 @@ export const afterResolveUser = (config: ViteUserConfig )=>{
         'readme.md':'index.md',
         
     }
+    config.srcExclude = ['**/__test__/**','**/__tests__/**']
 }
 export const hookUserConfig=(mode:'build'|'dev')=> (config: VitepressConfig) =>{
     const { DOCUMENT_ROOT, useConfig, PWD } = getUseConfig()
