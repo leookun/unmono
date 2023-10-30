@@ -1,23 +1,22 @@
 # 快速开始
 
-
-在任意一个有markdown文件的目录执行
-
 ```sh
+// 在任意一个有markdown文件的目录执行
 npx unmono doc --dev
 ```
 
 🎉 将会在`http://localhost:5001` 中预览到所有文档 
 
 或者直接查看[本项目文档网站](https://leookun.github.io/unmono/)，它是由unmono自构建的 <br/>
-或者尝试clone下这些博客构建在线文档：
+
+或者尝试clone下这些博客后为ta构建在线文档：
 
 * https://github.com/mqyqingfeng/Blog
 * https://github.com/fouber/blog
 
 ## 标题和目录
 
-在 markdown 开头加入以下信息，即可以将文档分组并重新命名
+在 markdown 开头加入以下信息，即可以将文档分组
 ```
 ---
 title: 安装
