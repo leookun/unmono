@@ -7,7 +7,7 @@ npx unmono doc --dev
 
 🎉 将会在`http://localhost:5001` 中预览到所有文档 
 
-或者直接查看[本项目文档网站](https://leookun.github.io/unmono/)，它是由unmono自构建的 <br/>
+或者直接查看[在线效果](https://leookun.github.io/unmono/)，它是由unmono自构建的 <br/>
 
 或者尝试clone下这些博客后为ta构建在线文档：
 
