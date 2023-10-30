@@ -109,6 +109,9 @@ export const afterResolveUser = (config: ViteUserConfig )=>{
         'readme.md':'index.md',
         
     }
+    config.markdown={
+        math:true
+    }
     config.srcExclude = ['**/__test__/**','**/__tests__/**']
 }
 export const hookUserConfig=(mode:'build'|'dev')=> (config: VitepressConfig) =>{
@@ -121,7 +124,12 @@ export const hookUserConfig=(mode:'build'|'dev')=> (config: VitepressConfig) =>{
     config.site.description = useConfig.description || 'unmono description'
     config.site.title = useConfig.title || 'Unmono'
     config.site.appearance = true;
-   
+    config.pages=config.pages.sort((a: string, b: string)=>{
+        const regex = /(\d+).+\.md$/;
+        const aIndex = parseInt(a.match(regex)?.[0] || '0');
+        const bIndex = parseInt(b.match(regex)?.[0]||'0');
+        return aIndex-bIndex
+    })
     const sidebar = config.pages.filter(name => name !== 'index.md').map((pageName) => {
         const { title, group } = readTitleAndGroup(fs.readFileSync(resolve(DOCUMENT_ROOT, `${pageName}`), 'utf8'))
         return {
