@@ -1,6 +1,6 @@
 {
   "name": "unmono",
-  "version": "0.0.24",
+  "version": "0.0.25",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/src/index.d.ts",
@@ -29,7 +29,7 @@
     "build-myself": "rimraf dist &&  npm run typescript-run script/build.self.ts",
     "start": "rimraf dist &&  npm run build-myself && node dist/cli.js doc --dev",
     "build": "rimraf docs &&  npm run build-myself && node dist/cli.js doc --build",
-    "release": "pnpm build-myself && pnpm release-npm ",
+    "release": "pnpm build && pnpm release-npm ",
     "release-npm": "pnpm publish --registry=https://registry.npmjs.org/ --no-git-checks "
   },
   "engines": {
