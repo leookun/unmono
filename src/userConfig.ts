@@ -101,7 +101,7 @@ export function groupedBy(originalArray, groupName) {
     }, {});
 }
 export const afterResolveUser = (config: ViteUserConfig )=>{
-    console.log(config)
+
     config.rewrites={
         ':path/README.md':':path/index.md',
         ':path/readme.md':':path/index.md',
@@ -186,6 +186,6 @@ export const hookUserConfig=(mode:'build'|'dev')=> (config: VitepressConfig) =>{
             }]:[])
         ]
     } as DefaultTheme.Config
-    console.log(config)
+    console.log((config.pages||[]).join("\n"))
     return config as VitepressConfig
 }
