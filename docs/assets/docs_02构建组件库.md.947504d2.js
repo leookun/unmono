@@ -19,7 +19,9 @@ import{_ as s,o as n,c as a,Q as o}from"./chunks/framework.38c78413.js";const q=
 <span class="line diff add"><span style="color:#E1E4E8;">    </span><span style="color:#6A737D;">// 是否构建d.ts (默认为false,如果设为true,则需要配置tsconfig) </span></span>
 <span class="line diff add"><span style="color:#E1E4E8;">    </span><span style="color:#79B8FF;">&quot;dts&quot;</span><span style="color:#E1E4E8;">: </span><span style="color:#79B8FF;">true</span><span style="color:#E1E4E8;">, </span></span>
 <span class="line diff add"><span style="color:#E1E4E8;">    </span><span style="color:#6A737D;">// 指定d.ts的tsconfig路径 (默认为packages同级的tsconfig.json) </span></span>
-<span class="line diff add"><span style="color:#E1E4E8;">    </span><span style="color:#79B8FF;">&quot;tsconfig&quot;</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&quot;tsconfig.json&quot;</span><span style="color:#E1E4E8;"> </span></span>
+<span class="line diff add"><span style="color:#E1E4E8;">    </span><span style="color:#79B8FF;">&quot;tsconfig&quot;</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&quot;tsconfig.json&quot;</span><span style="color:#E1E4E8;">, </span></span>
+<span class="line diff add"><span style="color:#E1E4E8;">    </span><span style="color:#6A737D;">// 可以指定less全局变量文件地址  </span></span>
+<span class="line diff add"><span style="color:#E1E4E8;">    </span><span style="color:#79B8FF;">&quot;less&quot;</span><span style="color:#E1E4E8;">:[]  </span></span>
 <span class="line diff add"><span style="color:#E1E4E8;">  }, </span></span>
 <span class="line"><span style="color:#E1E4E8;">  </span><span style="color:#79B8FF;">&quot;scripts&quot;</span><span style="color:#E1E4E8;">: {</span></span>
 <span class="line"><span style="color:#E1E4E8;">    </span><span style="color:#79B8FF;">&quot;dev&quot;</span><span style="color:#E1E4E8;">: </span><span style="color:#9ECBFF;">&quot;...&quot;</span><span style="color:#E1E4E8;">,</span></span>
@@ -46,7 +48,9 @@ import{_ as s,o as n,c as a,Q as o}from"./chunks/framework.38c78413.js";const q=
 <span class="line diff add"><span style="color:#24292E;">    </span><span style="color:#6A737D;">// 是否构建d.ts (默认为false,如果设为true,则需要配置tsconfig) </span></span>
 <span class="line diff add"><span style="color:#24292E;">    </span><span style="color:#005CC5;">&quot;dts&quot;</span><span style="color:#24292E;">: </span><span style="color:#005CC5;">true</span><span style="color:#24292E;">, </span></span>
 <span class="line diff add"><span style="color:#24292E;">    </span><span style="color:#6A737D;">// 指定d.ts的tsconfig路径 (默认为packages同级的tsconfig.json) </span></span>
-<span class="line diff add"><span style="color:#24292E;">    </span><span style="color:#005CC5;">&quot;tsconfig&quot;</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&quot;tsconfig.json&quot;</span><span style="color:#24292E;"> </span></span>
+<span class="line diff add"><span style="color:#24292E;">    </span><span style="color:#005CC5;">&quot;tsconfig&quot;</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&quot;tsconfig.json&quot;</span><span style="color:#24292E;">, </span></span>
+<span class="line diff add"><span style="color:#24292E;">    </span><span style="color:#6A737D;">// 可以指定less全局变量文件地址  </span></span>
+<span class="line diff add"><span style="color:#24292E;">    </span><span style="color:#005CC5;">&quot;less&quot;</span><span style="color:#24292E;">:[]  </span></span>
 <span class="line diff add"><span style="color:#24292E;">  }, </span></span>
 <span class="line"><span style="color:#24292E;">  </span><span style="color:#005CC5;">&quot;scripts&quot;</span><span style="color:#24292E;">: {</span></span>
 <span class="line"><span style="color:#24292E;">    </span><span style="color:#005CC5;">&quot;dev&quot;</span><span style="color:#24292E;">: </span><span style="color:#032F62;">&quot;...&quot;</span><span style="color:#24292E;">,</span></span>

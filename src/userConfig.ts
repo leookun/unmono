@@ -22,13 +22,14 @@ export type UserConfig={
     description: string
     title: string
     dts: boolean
-    tsconfig: string
+    tsconfig: string,
+    less?:string[]
 }
 export const getUseConfig =()=>{
     const PWD = resolve(process.cwd(),'./')
     let PKG
     try {
-        PKG = JSON.parse(fs.readFileSync(resolve(PWD, './package.json') || {}, 'utf-8'))
+        PKG = JSON.parse(fs.readFileSync(resolve(PWD, './package.json') || '{}', 'utf-8'))
     } catch (error) {
         PKG={}
     }
@@ -59,7 +60,9 @@ export const getUseConfig =()=>{
         // 是否构建d.ts (默认为false,如果设为true,则需要配置tsconfig) 
         dts: true,
         // 指定d.ts的tsconfig路径 (默认为packages同级的tsconfig.json) 
-        tsconfig: "tsconfig.json"
+        tsconfig: "tsconfig.json",
+        // 指定less全局变量文件地址
+        less:[]
     })
     return { DOCUMENT_ROOT, PKG, PWD, useConfig, external }
 }
