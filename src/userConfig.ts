@@ -24,6 +24,7 @@ export type UserConfig={
     dts: boolean
     tsconfig: string,
     less?:string[]
+    scss?:string[]
 }
 export const getUseConfig =()=>{
     const PWD = resolve(process.cwd(),'./')
@@ -62,7 +63,9 @@ export const getUseConfig =()=>{
         // 指定d.ts的tsconfig路径 (默认为packages同级的tsconfig.json) 
         tsconfig: "tsconfig.json",
         // 指定less全局变量文件地址
-        less:[]
+        less:[],
+        // 指定sass|scss全局变量文件地址
+        scss:[]
     })
     return { DOCUMENT_ROOT, PKG, PWD, useConfig, external }
 }

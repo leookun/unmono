@@ -14,7 +14,10 @@ export const buildlib = async (iswatch = false) => {
     const lessStr = (useConfig.less || []).reduce((additionalData, src) => {
         return `${additionalData}\n@import "${resolve(PWD, src)}";`
     }, ``)
-    console.log(lessStr)
+    const sassStr = (useConfig.scss || []).reduce((additionalData, src) => {
+        return `${additionalData}\n@import "${resolve(PWD, src)}";`
+    }, ``)
+    console.log(sassStr)
     await build({
         configFile: false,
         root: PWD,
@@ -45,6 +48,10 @@ export const buildlib = async (iswatch = false) => {
                     javascriptEnabled: true,
                     additionalData: lessStr
                 },
+                scss:{
+                    javascriptEnabled: true,
+                    additionalData:sassStr
+                }
             },
         },
         build: {
